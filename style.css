@@ -1,5 +1,15 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+#flipbook img{
+    object-fit: cover;
+}
+
 #loadbar{
     width: 0;
     height: 50px;
     background-color: blue;
+    position: absolute;
 }

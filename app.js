@@ -1,4 +1,4 @@
-const nbFlipImages = 500;
+const nbFlipImages = 1099;
 var nbLoaded = 0;
 const loadbarWidth = 200;
 
@@ -18,8 +18,8 @@ function load(i) {
 
         //-> images loaded
 
-        if(i == nbFlipImages) {
-            $('#preloader').hide();
+        if(i == nbFlipImages-1) {
+            document.getElementById("loadbar").remove();
         }
     }, false);
     
@@ -30,13 +30,10 @@ for (let i = 0; i < nbFlipImages; i++) {
     load(i);  
 }
 
-
-function flip(e){
-    var currentImg = Math.floor((e.pageX / window.innerWidth) * nbFlipImages);
+function flip(e) {
+    var currentImg = Math.floor((window.scrollY / window.innerHeight) * nbFlipImages);
     $('#flipbook').children().hide();
     $('#flipbook #i'+ currentImg).show();
 }
 
-//window.addEventListener('mousemove', flip);
-
-
+window.addEventListener('scroll', flip);
