@@ -1,9 +1,13 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <img src="assets/img//ui/logo.png" alt="Outsider" class="logo">
+    <img src="./assets/img/ui/logo.png" alt="Outsider" class="logo">
     <div id="loadbar"></div>
-    <div id="flipbook"></div>
+    <div id="flipbook">
+      <img v-for="fbImage in fbImages" 
+      :key="fbImage.id" 
+      :id="fbImage.id" 
+      :src="fbImage.src">
+    </div>
 
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
@@ -20,50 +24,46 @@ export default {
   },
   data(){
     return{
-      created(){
-        
-        const nbFlipImages = 1099;
-        var nbLoaded = 0;
-        const loadbarWidth = 200;
-
-        function load(i) {
-
-            let img = new Image();
-            let id = "i"+i;
-            img.setAttribute("id", id);
-
-            img.addEventListener('load', function() {
-
-                nbLoaded ++;
-                document.getElementById('flipbook').appendChild(img);
-
-                let percent = nbLoaded / nbFlipImages;
-                $('#loadbar').css({width: percent * loadbarWidth});
-
-                //-> images loaded
-
-                if(i == nbFlipImages-1) {
-                    document.getElementById("loadbar").remove();
-                }
-            }, false);
-            
-            img.src = "assets/img/flipbook/out-site-export_"+i+".jpg";
-        }
-
-        for (let i = 0; i < nbFlipImages; i++) {
-          load(i);  
-        }
-
-        function flip() {
-          var currentImg = Math.floor((window.scrollY / window.innerHeight) * nbFlipImages);
-          $('#flipbook').children().hide();
-          $('#flipbook #i'+ currentImg).show();
-        }
-
-        window.addEventListener('scroll', flip);
-
-      }
+      fbImages: [],
+      nbLoaded: 0,
+      nbFlipImages: 1099,
+      loadbarWidth: 200
     }
+  },
+  created(){
+
+
+    //let img = new Image();
+        //let id = "i"+i;
+        //img.setAttribute("id", id);
+
+        //this.nbLoaded ++;
+        //let percent = this.nbLoaded / this.nbFlipImages;
+        //$('#loadbar').css({width: percent * loadbarWidth});
+
+    for (let i = 0; i < this.nbFlipImages; i++) {
+      if(i == this.nbFlipImages-1) {
+          //document.getElementById("loadbar").remove();
+          this.$forceUpdate();
+        }
+
+        this.fbImages.push({
+          id: 'fbi'+i,
+          src: require("./assets/img/flipbook/out-site-export_"+i+".jpg")
+        });
+    }
+
+    let that = this;
+    let sbHeight = window.innerHeight * (window.innerHeight / document.body.offsetHeight);
+    let tY = document.body.scrollHeight - sbHeight;
+
+    window.addEventListener('scroll', function() {
+      let currentImg = Math.floor((window.pageYOffset / tY) * that.nbFlipImages);
+      // todo: hide seulement la bonne img
+      $('#flipbook').children().hide();
+      $('#flipbook #fbi'+ currentImg).show();
+    });
+
   }
 }
 </script>
