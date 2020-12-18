@@ -1,18 +1,19 @@
 <template>
   <div id="app">
-    <img src="./assets/img/ui/logo.png" alt="Outsider" class="logo">
-    
+    <img src="./assets/img/ui/logo.png" alt="Outsider" id="logo">
+    <Menu/>
+
+    <img src="./assets/img/ui/home.png" alt="">
+
+    <!-- preloader -->
 
     <div id="preloader" v-if="showPreloader">
       <div id="loadbar-container">
         <div id="loadbar" v-bind:style="{ width: loadbarWidth + 'px' }"></div>
-      </div>  
+      </div>
     </div>
 
-    <!-- <Preloader/> -->
-
-    <img src="./assets/img/ui/home.png" alt="">
-
+    <!-- flipbook -->
 
     <div id="flipbook">
       <img v-for="fbImage in fbImages" 
@@ -20,27 +21,26 @@
       :id="fbImage.id" 
       :src="fbImage.src">
     </div>
-
     
   </div>
 </template>
 
 <script>
-//import Preloader from './components/Preloader.vue'
+import Menu from './components/Menu.vue'
 import $ from 'jquery'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 
 export default {
   name: 'App',
   components: {
-    //Preloader
+    Menu
   },
   data(){
     return{
       fbImages: [],
       nbFlipImages: 1099,
       loadbarWidth: 0,
-      showPreloader: true
+      showPreloader: false
     }
   },
   mounted() {
@@ -101,8 +101,7 @@ export default {
 }
 </script>
 
-<style>
-@import './assets/styles/main.css';
+<style lang="scss">
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
