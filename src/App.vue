@@ -1,9 +1,12 @@
 <template>
   <div id="app">
     <img src="./assets/img/ui/logo.png" alt="Outsider" id="logo">
+    <img src="./assets/img/ui/burger.svg" alt="Menu" id="burger">
     <Menu/>
 
-    <img src="./assets/img/ui/home.png" alt="">
+    <div id="mask"></div>
+    <img src="./assets/img/ui/home.png" alt="" id="hometest">
+    
 
     <!-- preloader -->
 
@@ -103,12 +106,8 @@ export default {
 
 <style lang="scss">
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+#hometest{
+  width: 100%; 
 }
+
 </style>

@@ -30,6 +30,8 @@ export default {
     background-color: black;
 
     font-family: 'DargerScript';
+
+    transform: translate3d(100%, 0, 0);
   }
 
   li{
