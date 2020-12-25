@@ -4,7 +4,11 @@
     <img src="./assets/img/ui/burger.svg" alt="Menu" id="burger">
     <Menu/>
 
-    <div id="mask"></div>
+    <div id="mask-top"></div>
+    <div id="mask-bottom"></div>
+    <div id="mask-left"></div>
+    <div id="mask-right"></div>
+
     <img src="./assets/img/ui/home.png" alt="" id="hometest">
     
 
