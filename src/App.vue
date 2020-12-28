@@ -2,6 +2,7 @@
   <div id="app">
     <img src="./assets/img/ui/logo.png" alt="Outsider" id="logo">
     <img src="./assets/img/ui/burger.svg" alt="Menu" id="burger">
+    <img src="./assets/img/ui/play.svg" alt="Play" id="play">
     <Menu/>
 
     <div id="mask-top"></div>
@@ -47,7 +48,7 @@ export default {
       fbImages: [],
       nbFlipImages: 1099,
       loadbarWidth: 0,
-      showPreloader: false
+      showPreloader: true
     }
   },
   mounted() {
