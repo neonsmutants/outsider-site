@@ -11,11 +11,14 @@
     <div id="mask-right"></div>
 
     <img src="./assets/img/ui/home.png" alt="" id="hometest">
-    
 
     <!-- preloader -->
 
     <div id="preloader" v-if="showPreloader">
+      <div class="text-container">
+        <div class="title">OUTSIDER</div>
+        <div class="subtitle">Inspired by Henry Darger</div>
+      </div>     
       <div id="loadbar-container">
         <div id="loadbar" v-bind:style="{ width: loadbarWidth + 'px' }"></div>
       </div>
@@ -43,10 +46,10 @@ export default {
   components: {
     Menu
   },
-  data(){
-    return{
+  data() {
+    return {
       fbImages: [],
-      nbFlipImages: 1099,
+      nbFlipImages: 550,
       loadbarWidth: 0,
       showPreloader: true
     }
@@ -67,7 +70,7 @@ export default {
 
         nbLoaded ++
         let progress = nbLoaded / that.nbFlipImages
-        that.loadbarWidth = progress * 400
+        that.loadbarWidth = progress * 250
 
         //-----------------
 
@@ -86,7 +89,7 @@ export default {
 
       }, false)
 
-      img.src = require("./assets/img/flipbook/out-site-export_"+i+".jpg")
+      img.src = require("./assets/img/flipbook/out-site-export_"+(i*2)+".jpg")
     }
 
   },

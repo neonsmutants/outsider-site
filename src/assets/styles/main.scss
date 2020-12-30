@@ -12,6 +12,8 @@ html, body{
     //background-color: #EFDCC8;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+
+    font-family: 'Courier Prime', monospace;
 }
 
 ::-webkit-scrollbar{
@@ -92,7 +94,7 @@ html, body{
     overflow: hidden;
 }
 #flipbook img{
-    width: 100%;
+    //width: 100%;
     object-fit: cover;
 }
 
@@ -104,13 +106,26 @@ html, body{
     top: 0;
     left: 0;
     z-index: 1000;
+
+
+    .text-container{
+        width: 400px;
+        margin: 200px auto 0 auto;
+        text-align: center;
+    }
+
+    .title{
+        font-family: 'DargerScript', script;
+        font-size: 80px;
+        margin-bottom: 20px;
+    }
 }
 
 #loadbar-container{
-    width: 400px;
+    width: 250px;
     height: 5px;
     background-color: rgba(255, 255, 255, 0.4);
-    margin: 400px auto 0 auto;
+    margin: 100px auto 0 auto;
 }
 
 #loadbar{
