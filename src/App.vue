@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img src="./assets/img/ui/logo.png" alt="Outsider" id="logo">
-    <img src="./assets/img/ui/burger.svg" alt="Menu" id="burger">
+    <img src="./assets/img/ui/burger.svg" alt="Menu" id="burger" v-on:click="toggleMenu">
     <img src="./assets/img/ui/play.svg" alt="Play" id="play">
     <Menu/>
 
@@ -15,9 +15,8 @@
     <!-- preloader -->
 
     <div id="preloader" v-if="showPreloader">
-      <div class="text-container">
-        <div class="title">OUTSIDER</div>
-        <div class="subtitle">Inspired by Henry Darger</div>
+      <div class="heading">
+        <img src="./assets/img/ui/preloader-logo.png" alt="">
       </div>     
       <div id="loadbar-container">
         <div id="loadbar" v-bind:style="{ width: loadbarWidth + 'px' }"></div>
@@ -105,8 +104,8 @@ export default {
     })
   },
   methods: {
-    launch(){
-
+    toggleMenu: function() {
+      $('#menu').addClass('visible');
     }
   }
 }

@@ -6,14 +6,30 @@
     font-style: normal;
 }
 
+$cream: #F8F1EB;
+$dark: #1C1C1C;
+
 html, body{
     margin: 0;
     padding: 0;
-    //background-color: #EFDCC8;
+    //background-color: #F8F1EB;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-
     font-family: 'Courier Prime', monospace;
+    color: $dark;
+}
+
+a{
+    color: $dark;
+    text-decoration: none;
+
+    &:hover{
+        border-bottom: 4px solid $dark;
+    }
+}
+
+ul{
+    padding: 0;
 }
 
 ::-webkit-scrollbar{
@@ -23,7 +39,7 @@ html, body{
 #logo{
     width: 140px;
     position: fixed;
-    top: 25px;
+    top: 23px;
     left: 0;
     right: 0;
     margin: auto;
@@ -51,7 +67,7 @@ html, body{
 @mixin mask {
     position: fixed;
     z-index: 1;
-    background-color: #F8F1EB;
+    background-color: $cream;
 }
 
 #mask-top{  
@@ -101,17 +117,21 @@ html, body{
 #preloader{
     width: 100%;
     height: 100%;
-    background-color: #EFDCC8;
+    background-color: $cream;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
 
 
-    .text-container{
-        width: 400px;
+    .heading{
+        width: 500px;
         margin: 200px auto 0 auto;
         text-align: center;
+
+        img{
+            width: 100%;
+        }
     }
 
     .title{
@@ -124,12 +144,44 @@ html, body{
 #loadbar-container{
     width: 250px;
     height: 5px;
-    background-color: rgba(255, 255, 255, 0.4);
-    margin: 100px auto 0 auto;
+    //background-color: rgba(255, 255, 255, 0.4);
+    margin: 50px auto 0 auto;
 }
 
 #loadbar{
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: $dark;
+}
+
+#menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $cream;
+    color: $dark;
+    //font-family: 'DargerScript';
+    transform: translate3d(100%, 0, 0);
+    transition: 300ms;
+    z-index: 2000;
+    text-align: center;
+
+    &.visible{
+      transform: translate3d(0, 0, 0);
+    }
+
+    ul{
+      margin: 100px 0 0 0;
+    }
+
+    li{
+      list-style: none;
+      margin-bottom: 10px;
+    }
+
+    a{
+      font-size: 20px;
+    }
 }

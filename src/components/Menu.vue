@@ -1,12 +1,17 @@
 <template>
   <div id="menu">
     <ul>
-      <li><a href="#">HOME</a></li>
-      <li><a href="#">SHORT FILM</a></li>
-      <li><a href="#">ALBUM</a></li>
-      <li><a href="#">FILMS</a></li>
-      <li><a href="#">CONTACT</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Interactive Experience</a></li>
+      <li><a href="#">Short Film</a></li>
+      <li><a href="#">Album</a></li>
+      <li><a href="#">Films</a></li>
+      <li><a href="#">Podcasts</a></li>
+      <li><a href="#">Newsletter</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
+
+    <a href="#" v-on:click="toggleMenu"></a>
   </div>
 </template>
 
@@ -18,29 +23,3 @@ export default {
   }
 }
 </script>
-
-<style scoped lang="scss">
-
-  #menu{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background-color: black;
-
-    font-family: 'DargerScript';
-
-    transform: translate3d(100%, 0, 0);
-  }
-
-  li{
-    list-style: none;
-  }
-
-  a{
-    color: white;
-    text-decoration: none;
-    font-family: 'DargerScript';
-  }
-</style>
