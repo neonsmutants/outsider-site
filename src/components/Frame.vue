@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  name: 'Menu',
+  name: 'Frame',
   data() {
     return {
       menuVisible: false

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
    
-    <Menu/>
+    <Frame/>
 
     <img src="./assets/img/ui/home.png" alt="" id="hometest">
 
@@ -29,14 +29,14 @@
 </template>
 
 <script>
-import Menu from './components/Menu.vue'
+import Frame from './components/Frame.vue'
 import $ from 'jquery'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 
 export default {
   name: 'App',
   components: {
-    Menu
+    Frame
   },
   data() {
     return {
