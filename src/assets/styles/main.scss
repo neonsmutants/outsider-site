@@ -45,6 +45,7 @@ ul{
     margin: auto;
     z-index: 10;
 }
+
 #burger{
     width: 30px;
     position: fixed;
@@ -54,6 +55,7 @@ ul{
     right: 17px;
     z-index: 5;
 }
+
 #play{
     width: 30px;
     position: fixed;
@@ -62,6 +64,10 @@ ul{
     margin: auto;
     left: 16px;
     z-index: 5;
+}
+
+a.btn-close:hover{
+    border: none;
 }
 
 @mixin mask {
@@ -173,7 +179,7 @@ ul{
     }
 
     ul{
-      margin: 100px 0 0 0;
+      margin: 100px 0 50px 0;
     }
 
     li{

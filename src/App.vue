@@ -1,14 +1,7 @@
 <template>
   <div id="app">
-    <img src="./assets/img/ui/logo.png" alt="Outsider" id="logo">
-    <img src="./assets/img/ui/burger.svg" alt="Menu" id="burger" v-on:click="toggleMenu">
-    <img src="./assets/img/ui/play.svg" alt="Play" id="play">
+   
     <Menu/>
-
-    <div id="mask-top"></div>
-    <div id="mask-bottom"></div>
-    <div id="mask-left"></div>
-    <div id="mask-right"></div>
 
     <img src="./assets/img/ui/home.png" alt="" id="hometest">
 
@@ -104,9 +97,7 @@ export default {
     })
   },
   methods: {
-    toggleMenu: function() {
-      $('#menu').addClass('visible');
-    }
+    
   }
 }
 </script>
