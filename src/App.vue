@@ -5,6 +5,8 @@
 
     <img src="./assets/img/ui/home.png" alt="" id="hometest">
 
+    <img src="./assets/img/ui/scroll.svg" alt="Scroll down" id="scrolldown">
+
     <!-- preloader -->
 
     <div id="preloader" v-if="showPreloader">
@@ -105,7 +107,8 @@ export default {
 <style lang="scss">
 
 #hometest{
-  width: 100%; 
+  width: 100%;
+  opacity: 0;
 }
 
 </style>
