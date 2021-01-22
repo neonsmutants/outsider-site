@@ -1,11 +1,9 @@
 <template>
   <div id="app">
 
-    <img src="./assets/img/ui/home.png" alt="" id="hometest">
-    <img src="./assets/img/ui/scroll.svg" alt="Scroll down" id="scrolldown">
-
-    <Frame/>
     <Flipbook/>
+    <Home/>
+    <Frame/>
     
   </div>
 </template>
@@ -13,21 +11,14 @@
 <script>
 import Flipbook from './components/Flipbook.vue'
 import Frame from './components/Frame.vue'
+import Home from './components/Home.vue'
 
 export default {
   name: 'App',
   components: {
     Flipbook,
-    Frame
+    Frame,
+    Home
   }
 }
 </script>
-
-<style lang="scss">
-
-#hometest{
-  width: 100%;
-  opacity: 0;
-}
-
-</style>
