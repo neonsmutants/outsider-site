@@ -100,6 +100,31 @@
 
     <div class="space"></div>
 
+    <h2 class="bigtitle">HENRY DARGER</h2>
+
+    <div class="space"></div>
+
+    <div class="cloud left">
+      <div class="content">
+        <p class="quote">« I hated to see the day come when I will be grown up. I never wanted to. I wished to be young always. »</p>
+        <p class="signature">- Mike Lindsay</p>
+      </div>
+      <img src="@/assets/img/ui/clouds/c7.svg" class="cb c7">
+    </div>
+
+    <div class="cloud right">
+      <div class="content">
+        <p>
+          HENRY DARGER (1892-1973) was a reclusive hospital janitor and dishwasher who led a secret life as a prolific visual artist and epic novelist. His vast collection of creative work was discovered in 1972 when his two-room apartment in Chicago was cleared out shortly before he died. Over some 350 watercolor, pencil, collage and carbon-traced drawings, most of them stitched into three enormous "albums," as well as seven typewritten hand-bound books, thousands of bundled sheets of typewritten text, and numerous journals, ledgers and scrapbooks were discovered.
+        </p>
+        <p>
+          Darger's unpublished 15,000-page typewritten fantasy novel, The Story of the Vivian Girls, in What Is Known as the Realms of the Unreal, of the Glandeco-Angelinian War Storm, Caused by the Child Slave Rebellion — or, for short, In the Realms of the Unreal — and its 8,500-page handwritten sequel of sorts, Further Adventures of the Vivian Girls in Chicago, were the sagas upon which he based several hundred panoramic "illustrations," many of them double-sided and more than 9 feet in length.
+        </p>
+        <a href="#" class="bt-primary">Read full bio</a>
+      </div>
+      <img src="@/assets/img/ui/clouds/c8.svg" class="cb c8">
+    </div>
+
 </div>
   
 </template>

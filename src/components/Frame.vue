@@ -8,6 +8,7 @@
         <li><a href="#">HOME</a></li>
         <li><a href="#">ALBUM</a></li>
         <li><a href="#">CLIPS</a></li>
+        <li><a href="#">PODCASTS</a></li>
         <li><a href="#">CONTACT</a></li>
       </ul>
       <a href="#" v-on:click="toggleMenu" class="btn-close"><img src="@/assets/img/ui/close.svg" alt="Close menu"></a>
