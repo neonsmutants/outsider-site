@@ -18,7 +18,7 @@ html, body{
     font-family: 'Courier Prime', monospace;
     color: $dark;
     font-size: 14px;
-    overflow-x: hidden;
+    //overflow-x: hidden; // bug au scroll y (!!) todo: virer marges x
 }
 
 a{
@@ -74,6 +74,22 @@ ul{
     margin: auto;
     left: 16px;
     z-index: 13;
+}
+
+.bt-primary{
+    display: inline-block;
+    border: 4px solid $dark;
+    border-radius: 99px;
+    text-align: center;
+    padding: 18px 24px;
+    font-weight: 700;
+    transition: all 150ms;
+    width: fit-content;
+
+    &:hover{
+        background-color: $dark;
+        color: $cream;
+    }
 }
 
 a.btn-close:hover{
@@ -268,36 +284,46 @@ a.btn-close:hover{
         right: -41px;
     }
 
-    .c0{
+    #c0{
         top: -300px;      
     }
-    .c1{
+    #c1{
         top: -200px;
     }
-    .c2{
+    #c2{
         top: -250px;
     }
-    &.right .c3{
+    &.right #c3{
         top: -160px;
         right: -132px;
     }
-    .c4{
+    #c4{
         top: -100px;
     }
-    &.right .c5{
+    &.right #c5{
         top: -300px;
         right: -132px;
     }
-    .c6{
+    #c6{
         top: -200px;
     }
-}
-
-#c-darger{
-    width: 100%;
-    margin: 0 auto;
-    img{
-        width: 100%;
+    #c7{
+        top: -200px;
+    }
+    #c8{
+        top: -200px;
+    }
+    #c9{
+        top: -100px;
+    }
+    #c10{
+        top: -100px;
+    }
+    #c11{
+        top: 10px;
+    }
+    #c12{
+        top: -100px;
     }
 }
 
@@ -305,4 +331,22 @@ a.btn-close:hover{
     font-family: 'DargerScript';
     font-size: 72px;
     text-align: center;
+}
+
+.avatar{
+    width: 296px;
+    margin-bottom: 30px;
+}
+.name{
+    font-family: 'DargerScript';
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.role{
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+.persolink{
+    font-weight: 700;
 }
