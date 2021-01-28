@@ -64,7 +64,8 @@ export default {
         if(i == that.nbFlipImages-1) {
           that.$forceUpdate()
           enableBodyScroll(document.body)
-          that.showPreloader = false
+          $('#preloader').addClass('inactive');
+          //that.showPreloader = false
         }
 
       }, false)

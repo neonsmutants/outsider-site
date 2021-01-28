@@ -7,6 +7,14 @@
 
     <!-- embed youtube -->
     
+    <div class="cloud interstitial">
+      <div class="content center-text">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/p3FKn5eVCwg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <img src="@/assets/img/ui/clouds/cv.svg" class="cb ci" id="cvideo">
+    </div>
+    <div class="space"></div>
+    
     <div class="cloud left">
       <div class="content">
         <p class="big">A <strong>musical album</strong> and <strong>trans-media project</strong></p>
@@ -47,6 +55,13 @@
     <div class="space"></div>
 
     <!-- album -->
+    <div class="cloud interstitial">
+      <div class="content center-text">
+        <img src="@/assets/img/ui/album.png" alt="Album" class="thumb">
+        <a href="smarturl.it/outsiderdarger" target="blank" class="bt-primary">Listen to the album</a>
+      </div>
+      <img src="@/assets/img/ui/clouds/ci.svg" class="cb ci">
+    </div>
 
     <div class="space"></div>
 
@@ -86,6 +101,17 @@
         </p>       
       </div>
       <img src="@/assets/img/ui/clouds/c5.svg" class="cb" id="c5">
+    </div>
+
+    <div class="space"></div>
+
+    <!-- album -->
+    <div class="cloud interstitial">
+      <div class="content center-text">
+        <img src="@/assets/img/ui/clips.png" alt="Clips" class="thumb">
+        <a href="smarturl.it/outsiderdarger" target="blank" class="bt-primary">Watch clips</a>
+      </div>
+      <img src="@/assets/img/ui/clouds/ci.svg" class="cb ci">
     </div>
 
     <div class="space"></div>

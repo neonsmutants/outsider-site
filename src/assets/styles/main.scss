@@ -152,10 +152,14 @@ $mask-w: 48px;
     top: 0;
     left: 0;
     z-index: 1000;
+    transition: transform 1000ms ease-in-out;
 
+    &.inactive{
+        transform: translate3d(0, -100%, 0);
+    }
 
     .heading{
-        width: 500px;
+        width: 400px;
         margin: 200px auto 0 auto;
         text-align: center;
 
@@ -173,7 +177,7 @@ $mask-w: 48px;
 
 #loadbar-container{
     width: 250px;
-    height: 5px;
+    height: 1px;
     //background-color: rgba(255, 255, 255, 0.4);
     margin: 50px auto 0 auto;
 }
@@ -253,13 +257,18 @@ $menu-h: 120px;
 .cloud{
     position: relative;
 
+    &.interstitial{
+        width: 800px;
+        margin: 0 auto;
+    }
+
     &.left{
         float: left;
-        margin-left: 100px;
+        margin-left: 89px;
     }
     &.right{
         float: right;
-        margin-right: 100px;
+        margin-right: 89px;
         text-align: right;
     }
 
@@ -279,11 +288,26 @@ $menu-h: 120px;
     .content{
         position: relative;
         z-index: 2;
+
+        &.center-text{
+            text-align: center;
+        }
+    }
+
+    .thumb{
+        width: 400px;
+        display: block;
+        margin: 0 auto 20px;
     }
 
     .cb{
         position: absolute;
         z-index: 1;
+
+        &.ci{
+            top: -50px;
+            width: 100%;
+        }
     }
     &.left .cb{
         left: -41px;
@@ -331,6 +355,9 @@ $menu-h: 120px;
     #c12{
         top: -100px;
     }
+    #cvideo{
+        top: -85px;
+    }
 }
 
 .bigtitle{
@@ -356,3 +383,4 @@ $menu-h: 120px;
 .persolink{
     font-weight: 700;
 }
+
