@@ -90,6 +90,15 @@ ul{
         background-color: $dark;
         color: $cream;
     }
+
+    &.disabled{
+        opacity: .5;
+
+        &:hover{
+            background: none;
+            color: $dark;
+        }
+    }
 }
 
 @mixin mask {
@@ -356,27 +365,29 @@ $menu-h: 120px;
         top: -150px;
     }   
     #c-clips{
-        top: -280px;
+        top: -270px;
     }
     #c-tour{
-        top: -220px;
+        top: -240px;
     }
     #c-press{
-        top: -265px;
+        top: -260px;
     }
     #c-collections{
-        top: -420px;
+        top: -370px;
+        opacity: .5;
     }
     #c-makingoff{
-        top: -300px;
+        top: -310px;
+        opacity: .5;
     }
 }
 
 #c-album{
-    width: 700px;
+    width: 650px;
     margin: 0 auto;
     .cb{
-        top: -550px;
+        top: -500px;
     }       
 }
 
@@ -384,6 +395,12 @@ $menu-h: 120px;
     font-family: 'DargerScript';
     font-size: 72px;
     text-align: center;
+}
+
+.alert{
+    font-size: 16px;
+    color: red;
+    margin: 10px 0;
 }
 
 .avatar{

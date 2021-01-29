@@ -73,7 +73,6 @@
       <img src="@/assets/img/ui/clips.png" alt="Clips" class="cb ci" id="c-clips">
     </div>
 
-
     <div class="space"></div>
 
     <div class="cloud left">
@@ -179,7 +178,8 @@
     <!-- collections -->
     <div class="cloud interstitial">
       <div class="content center-text">
-        <a href="smarturl.it/outsiderdarger" target="blank" class="bt-primary">Collections around the globe</a>
+        <a target="blank" class="bt-primary disabled">Collections around the globe</a>
+        <div class="alert">Coming soon !</div>
       </div>
       <img src="@/assets/img/ui/globe.png" alt="Collections around the globe" class="cb ci" id="c-collections">
     </div>
@@ -244,6 +244,18 @@
       <img src="@/assets/img/ui/clouds/c12.svg" class="cb" id="c12">
     </div>
 
+    <div class="space"></div>
+
+    <!-- makingoff -->
+    <div class="cloud interstitial">
+      <div class="content center-text">
+        <a target="blank" class="bt-primary disabled">Making-off</a>
+        <div class="alert">Coming soon !</div>
+      </div>
+      <img src="@/assets/img/ui/makingoff.png" alt="Making Off" class="cb ci" id="c-makingoff">
+    </div>
+    
+    <div class="space"></div>
     <div class="space"></div>
 
 </div>
