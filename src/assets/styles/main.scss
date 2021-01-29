@@ -254,11 +254,15 @@ $menu-h: 120px;
     clear: both;
 }
 
+//-------
+// clouds
+//-------
+
 .cloud{
     position: relative;
 
     &.interstitial{
-        width: 800px;
+        width: 500px;
         margin: 0 auto;
     }
 
@@ -294,18 +298,11 @@ $menu-h: 120px;
         }
     }
 
-    .thumb{
-        width: 400px;
-        display: block;
-        margin: 0 auto 20px;
-    }
-
     .cb{
         position: absolute;
         z-index: 1;
 
         &.ci{
-            top: -50px;
             width: 100%;
         }
     }
@@ -355,8 +352,14 @@ $menu-h: 120px;
     #c12{
         top: -100px;
     }
-    #cvideo{
-        top: -85px;
+    #c-video{
+        top: -55px;
+    }
+    #c-album{
+        top: -550px;
+    }
+    #c-clips{
+        top: -400px;
     }
 }
 

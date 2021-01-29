@@ -1,18 +1,9 @@
 <template>
 <div>
-    <img src="@/assets/img/ui/scroll.svg" alt="Scroll down" id="scrolldown">
+    <!-- <img src="@/assets/img/ui/scroll.svg" alt="Scroll down" id="scrolldown"> -->
 
     <div class="space"></div>
     <div class="space"></div>
-
-    <!-- embed youtube -->
-    
-    <div class="cloud interstitial">
-      <div class="content center-text">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/p3FKn5eVCwg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <img src="@/assets/img/ui/clouds/cv.svg" class="cb ci" id="cvideo">
-    </div>
     <div class="space"></div>
     
     <div class="cloud left">
@@ -21,6 +12,16 @@
         <p class="subtitle">by Philippe Cohen Solal & Mike Lindsay</p>
       </div>    
       <img src="@/assets/img/ui/clouds/c0.svg" class="cb" id="c0">
+    </div>
+
+    <div class="space"></div>
+
+    <!-- embed youtube -->    
+    <div class="cloud interstitial">
+      <div class="content center-text">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/p3FKn5eVCwg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <img src="@/assets/img/ui/clouds/cv.svg" class="cb ci" id="c-video">
     </div>
 
     <div class="space"></div>
@@ -45,6 +46,16 @@
 
     <div class="space"></div>
 
+    <!-- album -->
+    <div class="cloud interstitial">
+      <div class="content center-text">     
+        <a href="smarturl.it/outsiderdarger" target="blank" class="bt-primary">Listen to the album</a>
+      </div>
+      <img src="@/assets/img/ui/album.png" alt="Album" class="cb ci" id="c-album">
+    </div>
+
+    <div class="space"></div>
+
     <div class="cloud right">
       <div class="content">
         <p><strong>OUTSIDER</strong> transports us into Henry Darger's imaginary and "unreal realm" by <strong>mixing music and dreamlike imagery</strong>. Based on animations, this video creation invites the spectator to immerse himself in <strong>the hallucinatory world of this phenomenal artist</strong>.</p>
@@ -54,14 +65,14 @@
 
     <div class="space"></div>
 
-    <!-- album -->
+    <!-- clips -->
     <div class="cloud interstitial">
       <div class="content center-text">
-        <img src="@/assets/img/ui/album.png" alt="Album" class="thumb">
-        <a href="smarturl.it/outsiderdarger" target="blank" class="bt-primary">Listen to the album</a>
+        <a href="smarturl.it/outsiderdarger" target="blank" class="bt-primary">Watch clips</a>
       </div>
-      <img src="@/assets/img/ui/clouds/ci.svg" class="cb ci">
+      <img src="@/assets/img/ui/clips.png" alt="Clips" class="cb ci" id="c-clips">
     </div>
+
 
     <div class="space"></div>
 
@@ -105,15 +116,14 @@
 
     <div class="space"></div>
 
-    <!-- album -->
+    <!-- tour -->
     <div class="cloud interstitial">
       <div class="content center-text">
-        <img src="@/assets/img/ui/clips.png" alt="Clips" class="thumb">
-        <a href="smarturl.it/outsiderdarger" target="blank" class="bt-primary">Watch clips</a>
+        <a href="smarturl.it/outsiderdarger" target="blank" class="bt-primary">Tour dates</a>
       </div>
-      <img src="@/assets/img/ui/clouds/ci.svg" class="cb ci">
+      <img src="@/assets/img/ui/dates.png" alt="Tour" class="cb ci" id="c-dates">
     </div>
-
+    
     <div class="space"></div>
 
     <div class="cloud left">
@@ -122,6 +132,16 @@
         <p class="signature">- Mike Lindsay</p>
       </div>
       <img src="@/assets/img/ui/clouds/c6.svg" class="cb" id="c6">
+    </div>
+
+    <div class="space"></div>
+
+    <!-- press -->
+    <div class="cloud interstitial">
+      <div class="content center-text">
+        <a href="smarturl.it/outsiderdarger" target="blank" class="bt-primary">They talk about us</a>
+      </div>
+      <img src="@/assets/img/ui/press.png" alt="Press" class="cb ci" id="c-press">
     </div>
 
     <div class="space"></div>
@@ -152,6 +172,16 @@
         <p><a href="https://en.wikipedia.org/wiki/Henry_Darger" target="blank" class="bt-primary">Read full bio</a></p>
       </div>
       <img src="@/assets/img/ui/clouds/c8.svg" class="cb" id="c8">
+    </div>
+
+    <div class="space"></div>
+
+    <!-- collections -->
+    <div class="cloud interstitial">
+      <div class="content center-text">
+        <a href="smarturl.it/outsiderdarger" target="blank" class="bt-primary">Collections around the globe</a>
+      </div>
+      <img src="@/assets/img/ui/globe.png" alt="Collections around the globe" class="cb ci" id="c-globe">
     </div>
 
     <div class="space"></div>
