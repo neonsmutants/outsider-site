@@ -352,15 +352,32 @@ $menu-h: 120px;
     #c12{
         top: -100px;
     }
-    #c-video{
-        top: -55px;
-    }
-    #c-album{
-        top: -550px;
-    }
+    #c-shortfilm{
+        top: -150px;
+    }   
     #c-clips{
-        top: -400px;
+        top: -280px;
     }
+    #c-tour{
+        top: -220px;
+    }
+    #c-press{
+        top: -265px;
+    }
+    #c-collections{
+        top: -420px;
+    }
+    #c-makingoff{
+        top: -300px;
+    }
+}
+
+#c-album{
+    width: 700px;
+    margin: 0 auto;
+    .cb{
+        top: -550px;
+    }       
 }
 
 .bigtitle{

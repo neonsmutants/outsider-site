@@ -5,6 +5,16 @@
     <div class="space"></div>
     <div class="space"></div>
     <div class="space"></div>
+
+    <!-- embed youtube -->    
+    <div class="cloud">
+      <div class="content center-text">
+      <iframe width="951" height="534" src="https://www.youtube.com/embed/p3FKn5eVCwg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <img src="@/assets/img/ui/shortfilm.svg" class="cb ci" id="c-shortfilm">
+    </div>
+
+    <div class="space"></div>
     
     <div class="cloud left">
       <div class="content">
@@ -12,16 +22,6 @@
         <p class="subtitle">by Philippe Cohen Solal & Mike Lindsay</p>
       </div>    
       <img src="@/assets/img/ui/clouds/c0.svg" class="cb" id="c0">
-    </div>
-
-    <div class="space"></div>
-
-    <!-- embed youtube -->    
-    <div class="cloud interstitial">
-      <div class="content center-text">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/p3FKn5eVCwg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <img src="@/assets/img/ui/clouds/cv.svg" class="cb ci" id="c-video">
     </div>
 
     <div class="space"></div>
@@ -47,11 +47,11 @@
     <div class="space"></div>
 
     <!-- album -->
-    <div class="cloud interstitial">
+    <div class="cloud" id="c-album">
       <div class="content center-text">     
         <a href="smarturl.it/outsiderdarger" target="blank" class="bt-primary">Listen to the album</a>
       </div>
-      <img src="@/assets/img/ui/album.png" alt="Album" class="cb ci" id="c-album">
+      <img src="@/assets/img/ui/album.png" alt="Album" class="cb ci">
     </div>
 
     <div class="space"></div>
@@ -119,9 +119,9 @@
     <!-- tour -->
     <div class="cloud interstitial">
       <div class="content center-text">
-        <a href="smarturl.it/outsiderdarger" target="blank" class="bt-primary">Tour dates</a>
+        <a href="smarturl.it/outsiderdarger" target="blank" class="bt-primary">Next gigs</a>
       </div>
-      <img src="@/assets/img/ui/dates.png" alt="Tour" class="cb ci" id="c-dates">
+      <img src="@/assets/img/ui/dates.png" alt="Tour" class="cb ci" id="c-tour">
     </div>
     
     <div class="space"></div>
@@ -181,7 +181,7 @@
       <div class="content center-text">
         <a href="smarturl.it/outsiderdarger" target="blank" class="bt-primary">Collections around the globe</a>
       </div>
-      <img src="@/assets/img/ui/globe.png" alt="Collections around the globe" class="cb ci" id="c-globe">
+      <img src="@/assets/img/ui/globe.png" alt="Collections around the globe" class="cb ci" id="c-collections">
     </div>
 
     <div class="space"></div>
