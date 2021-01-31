@@ -8,18 +8,11 @@
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Home" transform="translate(-825.000000, -25006.000000)">
-            <g id="Icon/Instagram" transform="translate(824.000000, 25005.500000)">
-                <g id="Group-7" transform="translate(0.636364, 0.636364)">
-                    <mask id="mask-2" fill="white">
-                        <use xlink:href="#path-1"></use>
-                    </mask>
-                    <use id="Mask" fill="#000000" xlink:href="#path-1"></use>
-                    <g id="Color/Grey" mask="url(#mask-2)" fill="#4A4A4A">
-                        <g transform="translate(-1.000000, -1.000000)" id="Color">
-                            <rect x="0" y="0" width="32.7272727" height="32.7272727"></rect>
-                        </g>
-                    </g>
-                </g>
+            <g id="Group-7" transform="translate(824.636364, 25006.136364)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#1C1C1C" xlink:href="#path-1"></use>
             </g>
         </g>
     </g>

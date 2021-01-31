@@ -260,14 +260,14 @@
 
     <footer id="footer">
       <div class="content">
-        <div class="row row-logos">
+        <div class="row">
           <div class="column2">
             <a href="#" class="logo"><img src="@/assets/img/ui/logo-yabasta.svg"></a>
             <a href="#" class="logo"><img src="@/assets/img/ui/logo-mam.svg"></a>
           </div>
           <div class="column2 nomargin">
             <a href="#" class="logo"><img src="@/assets/img/ui/logo-fb.svg"></a>
-            <a href="#" class="logo"><img src="@/assets/img/ui/logo-instagram.svg"></a>
+            <a href="#" class="logo"><img src="@/assets/img/ui/logo-insta.svg"></a>
             <a href="#" class="logo"><img src="@/assets/img/ui/logo-spotify.svg"></a>
             <a href="#" class="logo"><img src="@/assets/img/ui/logo-apple.svg"></a>
             <a href="#" class="logo"><img src="@/assets/img/ui/logo-amazon.svg"></a>
@@ -277,9 +277,10 @@
         <hr>
         <div class="row">
           <div class="column2">
-
+            <div class="label">Subscribe to our newsletter !</div>
+            <input type="email" name="newsletter" id="input-newsletter" placeholder="Email">
           </div>
-          <div class="column2">
+          <div class="column2 nomargin">
             <p class="minitext">
               <strong>OUTSIDER</strong>, inspired by Henry Darger: a musical and visual performance by <strong>Philippe Cohen Solal & Phormazero</strong>. 
               Website by <a href="#">Thomas Lhoest</a>. All rights reserved © 2020.
