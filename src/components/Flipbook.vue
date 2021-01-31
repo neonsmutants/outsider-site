@@ -79,10 +79,9 @@ export default {
     window.addEventListener('scroll', function() {
       let sbHeight = window.innerHeight * (window.innerHeight / document.body.offsetHeight)
       let tY = document.body.scrollHeight - sbHeight
-      let currentImg = Math.floor((window.pageYOffset / tY) * that.nbFlipImages)
-      // todo: bug flickr firefox
-      $('#flipbook').children().hide()
+      let currentImg = Math.floor((window.pageYOffset / tY) * that.nbFlipImages)   
       $('#flipbook #fbi'+ currentImg).show()
+      $('#flipbook').children().not('#flipbook #fbi'+ currentImg).hide()
     })
   }
 }
