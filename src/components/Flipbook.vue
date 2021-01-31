@@ -80,7 +80,7 @@ export default {
       let sbHeight = window.innerHeight * (window.innerHeight / document.body.offsetHeight)
       let tY = document.body.scrollHeight - sbHeight
       let currentImg = Math.floor((window.pageYOffset / tY) * that.nbFlipImages)
-      // todo: hide seulement la bonne img
+      // todo: bug flickr firefox
       $('#flipbook').children().hide()
       $('#flipbook #fbi'+ currentImg).show()
     })
