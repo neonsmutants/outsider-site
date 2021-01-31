@@ -140,8 +140,8 @@ $mask-w: 48px;
     left: 0;
     z-index: -1;
     margin: $mask-w;
-    width: calc(100% - $mask-w/2);
-    height: calc(100% - $mask-w/2);
+    width: calc(100% - #{$mask-w}/2);
+    height: calc(100% - #{$mask-w}/2);
     overflow: hidden;
 }
 #flipbook img{
