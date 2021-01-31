@@ -49,7 +49,7 @@
     <!-- album -->
     <div class="cloud" id="c-album">
       <div class="content center-text">     
-        <a href="smarturl.it/outsiderdarger" target="blank" class="bt-primary">Listen to the album</a>
+        <a href="http://smarturl.it/outsiderdarger" target="blank" class="bt-primary">Listen to the album</a>
       </div>
       <img src="@/assets/img/ui/album.png" alt="Album" class="cb ci">
     </div>
