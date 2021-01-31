@@ -24,10 +24,6 @@ html, body{
 a{
     color: $dark;
     text-decoration: none;
-
-    &:hover{
-        border-bottom: 4px solid $dark;
-    }
 }
 
 strong{
@@ -217,7 +213,7 @@ $menu-h: 120px;
     }
 
     ul{
-      width: 510px;
+      width: 577px;
       height: 40px;
       margin: 28px auto;
     }
@@ -421,3 +417,54 @@ $menu-h: 120px;
     font-weight: 700;
 }
 
+hr{
+    border: 1px solid $dark;
+    clear: both;
+    margin: 20px 0;
+}
+
+
+
+#footer{
+    position: relative;
+
+    .content{
+        padding: 0 100px;
+        position: relative;
+        z-index: 2;
+    }
+
+    a.logo{
+        height: 30px;
+        float: left;
+        margin-right: 15px;
+    }
+
+    .column2{
+        width: calc(50% - 60px);
+        float: left;
+        margin-right: 60px;
+        &.nomargin{
+            margin-right: 0;
+        }
+    }
+
+    .minitext{
+        font-size: 10px;
+        a{
+            font-weight: 700;
+        }
+    }
+}
+
+#c-footer{
+    position: absolute;
+    z-index: 1;
+    top: -500px;
+    left: 0;
+    width: 100%;
+}
+
+.clearfix{
+    clear: both;
+}

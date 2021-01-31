@@ -258,6 +258,38 @@
     <div class="space"></div>
     <div class="space"></div>
 
+    <footer id="footer">
+      <div class="content">
+        <div class="row row-logos">
+          <div class="column2">
+            <a href="#" class="logo"><img src="@/assets/img/ui/logo-yabasta.svg"></a>
+            <a href="#" class="logo"><img src="@/assets/img/ui/logo-mam.svg"></a>
+          </div>
+          <div class="column2 nomargin">
+            <a href="#" class="logo"><img src="@/assets/img/ui/logo-fb.svg"></a>
+            <a href="#" class="logo"><img src="@/assets/img/ui/logo-instagram.svg"></a>
+            <a href="#" class="logo"><img src="@/assets/img/ui/logo-spotify.svg"></a>
+            <a href="#" class="logo"><img src="@/assets/img/ui/logo-apple.svg"></a>
+            <a href="#" class="logo"><img src="@/assets/img/ui/logo-amazon.svg"></a>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="column2">
+
+          </div>
+          <div class="column2">
+            <p class="minitext">
+              <strong>OUTSIDER</strong>, inspired by Henry Darger: a musical and visual performance by <strong>Philippe Cohen Solal & Phormazero</strong>. 
+              Website by <a href="#">Thomas Lhoest</a>. All rights reserved © 2020.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="@/assets/img/ui/clouds/footer.svg" id="c-footer">
+    </footer>
+
 </div>
   
 </template>
