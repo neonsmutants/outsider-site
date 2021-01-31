@@ -5,12 +5,12 @@
 
     <div id="menu" v-bind:class="{ visible: menuVisible }">
       <ul>
-        <li><a href="#">ALBUM</a></li>
-        <li><a href="#">CLIPS</a></li>
-        <li><a href="#">PODCASTS</a></li>
-        <li><a href="#">TOUR</a></li>
-        <li><a href="#">SHOP</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="http://smarturl.it/outsiderdarger" target="blank">ALBUM</a></li>
+        <li><a href="https://www.youtube.com/watch?v=p3FKn5eVCwg&list=PL6c_5GyF9mZQXOmzXyQ5WsqcjZ3GnWYaL" target="blank">CLIPS</a></li>
+        <li><a href="#" target="blank">PODCASTS</a></li>
+        <li><a href="https://www.songkick.com/artists/3653951-philippe-cohen-solal" target="blank">TOUR</a></li>
+        <li><a href="https://yabasta-records.com/boutique" target="blank">SHOP</a></li>
+        <li><a href="mailto:info@yabasta-records.com">CONTACT</a></li>
       </ul>
       <a href="#" v-on:click="toggleMenu" class="bt-close"><img src="@/assets/img/ui/close.svg" alt="Close menu"></a>
     </div>

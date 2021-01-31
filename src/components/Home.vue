@@ -68,7 +68,7 @@
     <!-- clips -->
     <div class="cloud interstitial">
       <div class="content center-text">
-        <a href="smarturl.it/outsiderdarger" target="blank" class="bt-primary">Watch clips</a>
+        <a href="https://www.youtube.com/watch?v=p3FKn5eVCwg&list=PL6c_5GyF9mZQXOmzXyQ5WsqcjZ3GnWYaL" target="blank" class="bt-primary">Watch clips</a>
       </div>
       <img src="@/assets/img/ui/clips.png" alt="Clips" class="cb ci" id="c-clips">
     </div>
@@ -118,7 +118,7 @@
     <!-- tour -->
     <div class="cloud interstitial">
       <div class="content center-text">
-        <a href="smarturl.it/outsiderdarger" target="blank" class="bt-primary">Next gigs</a>
+        <a href="https://www.songkick.com/artists/3653951-philippe-cohen-solal" target="blank" class="bt-primary">Next gigs</a>
       </div>
       <img src="@/assets/img/ui/dates.png" alt="Tour" class="cb ci" id="c-tour">
     </div>
@@ -197,7 +197,7 @@
         <div class="role">Guitars, electronics, vocals</div>
         <p><strong>The million-selling artist, producer, composer and co-founder of Gotan Project, Philippe Cohen Solal</strong> has also collaborated with numerous artists like Salif Keita, Angelique Kidjo, Horace Andy, Adrien Brody, Roberto Fonseca, Dorfmeister, Chassol, Bobby Mc Ferrin...</p>
         <br>
-        <a href="https://fr.wikipedia.org/wiki/Philippe_Cohen_Solal" target="blank" class="persolink">> More infos</a>
+        <a href="https://www.instagram.com/philippecohensolal/" target="blank" class="persolink">> More infos</a>
       </div>
       <img src="@/assets/img/ui/clouds/c9.svg" class="cb" id="c9">
     </div>
@@ -211,7 +211,7 @@
         <div class="role">Guitars, bass, electronics, vocals</div>
         <p><strong>Mercury Music Prize winning producer, Mike Lindsay</strong> is most known for being the co-founder, composer and producer of UK acid folk band <strong>Tunng</strong>. He has co-written and produced many albums for a wide range of artists including Speech Debelle's Mercury Music prize winning album "Speech Therapy", Jon Hopkins, Farao, DuBlonde, Low Roar, Beth Jeans Houghton, Serafina Steer, Cibelle and Laura J Martin...</p>
         <br>
-        <a href="https://fr.wikipedia.org/wiki/Tunng" target="blank" class="persolink">> More infos</a>
+        <a href="http://www.mike-lindsay.com" target="blank" class="persolink">> More infos</a>
       </div>
       <img src="@/assets/img/ui/clouds/c10.svg" class="cb" id="c10">
     </div>
@@ -225,7 +225,7 @@
         <div class="role">Lead singer</div>
         <p><strong>Adam Glover is a recording artist originally from Manchester</strong>, UK, where his love for crooning first began. After graduating from the university of Westminster as a Bachelor of Musicology, Adam resided in Los Angeles working with some of the music industry's top producers.</p>
         <br>
-        <a href="https://fr.wikipedia.org/wiki/Philippe_Cohen_Solal" target="blank" class="persolink">> More infos</a>
+        <!-- <a href="#" target="blank" class="persolink">> More infos</a> -->
       </div>
       <img src="@/assets/img/ui/clouds/c11.svg" class="cb" id="c11">
     </div>
@@ -239,14 +239,14 @@
         <div class="role">Keyboards, violin, trombone, vocals</div>
         <p><strong>Emmy-nominated and RTS winning composer</strong>, with a flow of solo albums and collaborative releases, <strong>Hannah joins the dots between science, nature and the creative arts</strong>, through her explorative approach to electronic, classical and traditional music.</p>
         <br>
-        <a href="https://fr.wikipedia.org/wiki/Tunng" target="blank" class="persolink">> More infos</a>
+        <a href="http://www.hannahpeel.com" target="blank" class="persolink">> More infos</a>
       </div>
       <img src="@/assets/img/ui/clouds/c12.svg" class="cb" id="c12">
     </div>
 
     <div class="space"></div>
 
-    <!-- makingoff -->
+    <!-- making-off -->
     <div class="cloud interstitial">
       <div class="content center-text">
         <a target="blank" class="bt-primary disabled">Making-off</a>
@@ -262,15 +262,14 @@
       <div class="content">
         <div class="row">
           <div class="column2">
-            <a href="#" class="logo"><img src="@/assets/img/ui/logo-yabasta.svg"></a>
-            <a href="#" class="logo"><img src="@/assets/img/ui/logo-mam.svg"></a>
+            <a href="https://yabasta-records.com" target="blank" class="logo"><img src="@/assets/img/ui/logo-yabasta.svg"></a>
+            <a href="fb.com/philippecohensolalofficial" target="blank" class="logo"><img src="@/assets/img/ui/logo-fb.svg"></a>
+            <a href="https://www.instagram.com/philippecohensolal/" target="blank" class="logo"><img src="@/assets/img/ui/logo-insta.svg"></a>
           </div>
-          <div class="column2 nomargin">
-            <a href="#" class="logo"><img src="@/assets/img/ui/logo-fb.svg"></a>
-            <a href="#" class="logo"><img src="@/assets/img/ui/logo-insta.svg"></a>
-            <a href="#" class="logo"><img src="@/assets/img/ui/logo-spotify.svg"></a>
-            <a href="#" class="logo"><img src="@/assets/img/ui/logo-apple.svg"></a>
-            <a href="#" class="logo"><img src="@/assets/img/ui/logo-amazon.svg"></a>
+          <div class="column2 nomargin">        
+            <a href="https://open.spotify.com/album/02tG8xdQhgLxZHxb50SEC4?si=ZWPbWQVRTQ-yWYAw_kGLZg" target="blank" class="logo"><img src="@/assets/img/ui/logo-spotify.svg"></a>
+            <a href="https://music.apple.com/fr/album/outsider-feat-adam-glover/1535924537?uo=4&ls=1&app=music&at=11lEW&ct=v0zuwf" target="blank" class="logo"><img src="@/assets/img/ui/logo-apple.svg"></a>
+            <a href="https://www.amazon.com/dp/B08L81Z756?tag=smarturl-pivot-20" target="blank" class="logo"><img src="@/assets/img/ui/logo-amazon.svg"></a>
           </div>
           <div class="clearfix"></div>
         </div>
