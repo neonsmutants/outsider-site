@@ -213,7 +213,7 @@ $menu-h: 120px;
     }
 
     ul{
-      width: 577px;
+      width: 688px;
       height: 40px;
       margin: 28px auto;
     }
@@ -363,6 +363,9 @@ $menu-h: 120px;
     #c-clips{
         top: -270px;
     }
+    #c-podcasts{
+        top: -120px;
+    }
     #c-tour{
         top: -240px;
     }
@@ -373,10 +376,19 @@ $menu-h: 120px;
         top: -370px;
         opacity: .5;
     }
+    #c-shop{
+        top: -260px;
+    }
     #c-makingof{
         top: -310px;
         opacity: .5;
     }
+}
+
+#c-darger{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
 }
 
 #album{

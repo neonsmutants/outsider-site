@@ -83,6 +83,17 @@
 
     <div class="space"></div>
 
+    <!-- podcasts -->
+    <div class="cloud interstitial" id="podcasts">
+      <div class="content center-text">
+        <iframe width="80%" height="80" src="https://embed.acast.com/outsider-histoire-henry-darger" scrolling="no" frameborder="0" style="border:none;overflow:hidden;"></iframe>
+        <a href="#" target="blank" class="bt-primary">More podcasts</a>
+      </div>
+      <img src="@/assets/img/ui/clouds/c-podcasts.png" alt="Podcasts" class="cb ci" id="c-podcasts">
+    </div>
+
+    <div class="space"></div>
+
     <div class="cloud right">
       <div class="content">
         <p class="quote">« These are not your average love songs. »</p>
@@ -155,6 +166,8 @@
     </div>
 
     <div class="space"></div>
+
+    <img src="@/assets/img/ui/darger.png" alt="Darger" id="c-darger">
 
     <div class="cloud left">
       <div class="content">
@@ -250,6 +263,16 @@
         <div class="alert">Coming soon !</div>
       </div>
       <img src="@/assets/img/ui/makingof.png" alt="Making Of" class="cb ci" id="c-makingof">
+    </div>
+
+    <div class="space"></div>
+
+    <!-- shop -->
+    <div class="cloud interstitial" id="shop">
+      <div class="content center-text">
+        <a href="https://yabasta-records.com/boutique" target="blank" class="bt-primary">Visit our shop</a>
+      </div>
+      <img src="@/assets/img/ui/clouds/c-shop.png" alt="Shop" class="cb ci" id="c-shop">
     </div>
     
     <div class="space"></div>
