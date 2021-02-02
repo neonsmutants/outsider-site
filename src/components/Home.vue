@@ -8,7 +8,7 @@
 
     <!-- embed youtube -->    
     <div class="video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/p3FKn5eVCwg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/p3FKn5eVCwg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div class="space"></div>
@@ -194,7 +194,7 @@
         <div class="role">Keyboards & electronics</div>
         <p><strong>The million-selling artist, producer, composer and co-founder of Gotan Project, Philippe Cohen Solal</strong> has also collaborated with numerous artists like Salif Keita, Angelique Kidjo, Horace Andy, Adrien Brody, Roberto Fonseca, Dorfmeister, Chassol, Bobby Mc Ferrin...</p>
         <br>
-        <a href="https://www.instagram.com/philippecohensolal/" target="blank" class="persolink">> More infos</a>
+        <a href="https://yabasta-records.com/en/philippe-cohen-solal" target="blank" class="persolink">> More infos</a>
       </div>
       <img src="@/assets/img/ui/clouds/c9.svg" class="cb" id="c9">
     </div>
@@ -257,7 +257,6 @@
 
     <footer id="footer">
       <div class="content">
-
         <div class="row">
           <div class="column2">
             <form action="">
@@ -272,9 +271,7 @@
           </div>
         </div>
         <div class="clearfix"></div>
-
         <hr>
-
         <div class="row">
           <div class="column2">
             <a href="https://yabasta-records.com" target="blank" class="logo"><img src="@/assets/img/ui/logo-yabasta.svg"></a>
@@ -288,20 +285,18 @@
           </div>         
         </div>
         <div class="clearfix"></div>
-
         <div class="row">
-          <p class="minitext">
-            <strong>OUTSIDER</strong>, a musical album & transmedia project inspired by Henry Darger. 
-            <br>Website by <a href="https://www.behance.net/neonsmutants" target="blank">Néons Mutants</a>. All rights reserved © 2020.
-          </p>
+          <div class="column2 nomargin">
+            <p class="minitext">
+              <strong>OUTSIDER</strong>, a musical album & transmedia project inspired by Henry Darger. 
+              <br>Website by <a href="https://www.behance.net/neonsmutants" target="blank">Néons Mutants</a>. All rights reserved © 2020.
+            </p>
+          </div>
         </div>
-
       </div>
       <img src="@/assets/img/ui/clouds/footer.svg" id="c-footer">
     </footer>
-
 </div>
-  
 </template>
 
 <script>
