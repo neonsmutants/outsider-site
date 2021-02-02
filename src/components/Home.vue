@@ -7,11 +7,8 @@
     <div class="space"></div>
 
     <!-- embed youtube -->    
-    <div class="cloud">
-      <div class="content center-text">
-      <iframe width="951" height="534" src="https://www.youtube.com/embed/p3FKn5eVCwg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <img src="@/assets/img/ui/shortfilm.svg" class="cb ci" id="c-shortfilm">
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/p3FKn5eVCwg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div class="space"></div>
@@ -47,7 +44,7 @@
     <div class="space"></div>
 
     <!-- album -->
-    <div class="cloud" id="c-album">
+    <div class="cloud" id="album">
       <div class="content center-text">     
         <a href="http://smarturl.it/outsiderdarger" target="blank" class="bt-primary">Listen to the album</a>
       </div>
@@ -65,12 +62,12 @@
 
     <div class="space"></div>
 
-    <!-- clips -->
-    <div class="cloud interstitial">
+    <!-- videos -->
+    <div class="cloud interstitial" id="videos">
       <div class="content center-text">
-        <a href="https://www.youtube.com/watch?v=p3FKn5eVCwg&list=PL6c_5GyF9mZQXOmzXyQ5WsqcjZ3GnWYaL" target="blank" class="bt-primary">Watch clips</a>
+        <a href="https://www.youtube.com/watch?v=p3FKn5eVCwg&list=PL6c_5GyF9mZQXOmzXyQ5WsqcjZ3GnWYaL" target="blank" class="bt-primary">Watch videos</a>
       </div>
-      <img src="@/assets/img/ui/clips.png" alt="Clips" class="cb ci" id="c-clips">
+      <img src="@/assets/img/ui/clips.png" alt="Videos" class="cb ci" id="c-clips">
     </div>
 
     <div class="space"></div>
@@ -79,7 +76,7 @@
       <div class="content">
         <p class="quote">« I dream that this transmedia project brings together past, present and future. »</p>
         <br>
-        <p>« I dream that this transmedia project <strong>brings together past, present and future</strong>. Music, visual arts and storytelling. I would like that through this audiovisual and interactive creation inspired by the work and life of the most famous artist of Art Brut, the public questions <strong>the role and relationship of celebrity to the necessity of art</strong>. » <br><br> - Philippe Cohen Solal</p>
+        <p>« I dream that this transmedia project <strong>brings together past, present and future</strong>. Music, visual arts and storytelling. I would like that through this audiovisual and interactive creation inspired by the work and life of the most famous outsider artist, the public questions <strong>the role and relationship of celebrity to the necessity of art</strong>. » <br><br> - Philippe Cohen Solal</p>
       </div>
       <img src="@/assets/img/ui/clouds/c4.svg" class="cb" id="c4">
     </div>
@@ -116,9 +113,9 @@
     <div class="space"></div>
 
     <!-- tour -->
-    <div class="cloud interstitial">
+    <div class="cloud interstitial" id="tour">
       <div class="content center-text">
-        <a href="https://www.songkick.com/artists/3653951-philippe-cohen-solal" target="blank" class="bt-primary">Next gigs</a>
+        <a href="https://www.songkick.com/artists/3653951-philippe-cohen-solal" target="blank" class="bt-primary">Upcoming gigs</a>
       </div>
       <img src="@/assets/img/ui/dates.png" alt="Tour" class="cb ci" id="c-tour">
     </div>
@@ -136,9 +133,9 @@
     <div class="space"></div>
 
     <!-- press -->
-    <div class="cloud interstitial">
+    <div class="cloud interstitial" id="press">
       <div class="content center-text">
-        <a href="smarturl.it/outsiderdarger" target="blank" class="bt-primary">They talk about us</a>
+        <a href="https://linktr.ee/outsiderpress" target="blank" class="bt-primary">They talk about us</a>
       </div>
       <img src="@/assets/img/ui/press.png" alt="Press" class="cb ci" id="c-press">
     </div>
@@ -176,7 +173,7 @@
     <div class="space"></div>
 
     <!-- collections -->
-    <div class="cloud interstitial">
+    <div class="cloud interstitial" id="collections">
       <div class="content center-text">
         <a target="blank" class="bt-primary disabled">Collections around the globe</a>
         <div class="alert">Coming soon !</div>
@@ -194,7 +191,7 @@
       <div class="content">
         <img src="@/assets/img/ui/avatar0.png" alt="Philippe" class="avatar">
         <div class="name">PHILIPPE COHEN SOLAL</div>
-        <div class="role">Guitars, electronics, vocals</div>
+        <div class="role">Keyboards & electronics</div>
         <p><strong>The million-selling artist, producer, composer and co-founder of Gotan Project, Philippe Cohen Solal</strong> has also collaborated with numerous artists like Salif Keita, Angelique Kidjo, Horace Andy, Adrien Brody, Roberto Fonseca, Dorfmeister, Chassol, Bobby Mc Ferrin...</p>
         <br>
         <a href="https://www.instagram.com/philippecohensolal/" target="blank" class="persolink">> More infos</a>
@@ -208,7 +205,7 @@
       <div class="content">
         <img src="@/assets/img/ui/avatar1.png" alt="Mike" class="avatar">
         <div class="name">MIKE LINDSAY</div>
-        <div class="role">Guitars, bass, electronics, vocals</div>
+        <div class="role">Guitar, bass & electronics</div>
         <p><strong>Mercury Music Prize winning producer, Mike Lindsay</strong> is most known for being the co-founder, composer and producer of UK acid folk band <strong>Tunng</strong>. He has co-written and produced many albums for a wide range of artists including Speech Debelle's Mercury Music prize winning album "Speech Therapy", Jon Hopkins, Farao, DuBlonde, Low Roar, Beth Jeans Houghton, Serafina Steer, Cibelle and Laura J Martin...</p>
         <br>
         <a href="http://www.mike-lindsay.com" target="blank" class="persolink">> More infos</a>
@@ -246,13 +243,13 @@
 
     <div class="space"></div>
 
-    <!-- making-off -->
-    <div class="cloud interstitial">
+    <!-- making-of -->
+    <div class="cloud interstitial" id="making-of">
       <div class="content center-text">
-        <a target="blank" class="bt-primary disabled">Making-off</a>
+        <a target="blank" class="bt-primary disabled">Making-of</a>
         <div class="alert">Coming soon !</div>
       </div>
-      <img src="@/assets/img/ui/makingoff.png" alt="Making Off" class="cb ci" id="c-makingoff">
+      <img src="@/assets/img/ui/makingof.png" alt="Making Of" class="cb ci" id="c-makingof">
     </div>
     
     <div class="space"></div>
@@ -260,32 +257,45 @@
 
     <footer id="footer">
       <div class="content">
+
+        <div class="row">
+          <div class="column2">
+            <form action="">
+              <label for="newsletter" class="title">Subscribe to our newsletter !</label>
+              <input type="email" name="newsletter" id="input-newsletter" placeholder="Email">
+              <button type="submit">Send</button>
+            </form>
+          </div>
+          <div class="column2 nomargin" id="contact">
+            <div class="title">Contact us</div>
+            <p>Send an email to <a href="mailto:info@yabasta-records.com">Yabasta Records</a>.</p>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <hr>
+
         <div class="row">
           <div class="column2">
             <a href="https://yabasta-records.com" target="blank" class="logo"><img src="@/assets/img/ui/logo-yabasta.svg"></a>
-            <a href="fb.com/philippecohensolalofficial" target="blank" class="logo"><img src="@/assets/img/ui/logo-fb.svg"></a>
+            <a href="https://fb.com/philippecohensolalofficial" target="blank" class="logo"><img src="@/assets/img/ui/logo-fb.svg"></a>
             <a href="https://www.instagram.com/philippecohensolal/" target="blank" class="logo"><img src="@/assets/img/ui/logo-insta.svg"></a>
           </div>
           <div class="column2 nomargin">        
             <a href="https://open.spotify.com/album/02tG8xdQhgLxZHxb50SEC4?si=ZWPbWQVRTQ-yWYAw_kGLZg" target="blank" class="logo"><img src="@/assets/img/ui/logo-spotify.svg"></a>
             <a href="https://music.apple.com/fr/album/outsider-feat-adam-glover/1535924537?uo=4&ls=1&app=music&at=11lEW&ct=v0zuwf" target="blank" class="logo"><img src="@/assets/img/ui/logo-apple.svg"></a>
             <a href="https://www.amazon.com/dp/B08L81Z756?tag=smarturl-pivot-20" target="blank" class="logo"><img src="@/assets/img/ui/logo-amazon.svg"></a>
-          </div>
-          <div class="clearfix"></div>
+          </div>         
         </div>
-        <hr>
+        <div class="clearfix"></div>
+
         <div class="row">
-          <div class="column2">
-            <div class="label">Subscribe to our newsletter !</div>
-            <input type="email" name="newsletter" id="input-newsletter" placeholder="Email">
-          </div>
-          <div class="column2 nomargin">
-            <p class="minitext">
-              <strong>OUTSIDER</strong>, inspired by Henry Darger: a musical and visual performance by <strong>Philippe Cohen Solal & Phormazero</strong>. 
-              Website by <a href="#">Thomas Lhoest</a>. All rights reserved © 2020.
-            </p>
-          </div>
+          <p class="minitext">
+            <strong>OUTSIDER</strong>, a musical album & transmedia project inspired by Henry Darger. 
+            <br>Website by <a href="https://www.behance.net/neonsmutants" target="blank">Néons Mutants</a>. All rights reserved © 2020.
+          </p>
         </div>
+
       </div>
       <img src="@/assets/img/ui/clouds/footer.svg" id="c-footer">
     </footer>

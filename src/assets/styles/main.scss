@@ -373,13 +373,13 @@ $menu-h: 120px;
         top: -370px;
         opacity: .5;
     }
-    #c-makingoff{
+    #c-makingof{
         top: -310px;
         opacity: .5;
     }
 }
 
-#c-album{
+#album{
     width: 650px;
     margin: 0 auto;
     .cb{
@@ -423,8 +423,6 @@ hr{
     margin: 20px 0;
 }
 
-
-
 #footer{
     position: relative;
 
@@ -449,15 +447,20 @@ hr{
         }
     }
 
-    .minitext{
-        font-size: 10px;
-        a{
-            font-weight: 700;
-        }
+    .title{
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        display: block;
     }
 
-    .label{
-        margin-bottom: 10px;
+    .minitext{
+        margin-top: 18px;
+        font-size: 10px;
+    }
+
+    p a{
+        font-weight: 700;
     }
 }
 
@@ -477,11 +480,55 @@ input[type=email]{
     font-size: 14px;
     font-family:'Courier Prime', monospace;
     font-style: italic;
-    padding: 15px 20px;
-    border: 4px solid $dark;
-    width: 300px;
+    padding: 0 20px;
+    border: 2px solid $dark;
+    width: calc(70% - 44px);
+    height: 54px;
     background: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    &:focus{
+        outline: none;
+        border-color: white;
+    }
 }
 ::placeholder {
     color: $dark;
-  }
+}
+button{
+    //padding: 15px 20px;
+    font-family:'Courier Prime', monospace;
+    font-style: italic;
+    width: 30%;
+    height: 54px;
+    background-color: $dark;
+    border: none;
+    color: $cream;
+    transform: translateY(-1px);
+    outline: none;
+
+    &:hover{
+        background-color: white;
+        color: $dark;
+        cursor: pointer;
+    }
+}
+
+.video-container { 
+    overflow: hidden; 
+    padding-bottom: 56.25%; 
+    position: relative; 
+    height: 0;
+    width: 70%;
+    margin: 0 auto;
+}
+    
+.video-container iframe {
+    left: 0; 
+    top: 0; 
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
