@@ -86,7 +86,7 @@
     <!-- podcasts -->
     <div class="cloud interstitial" id="podcasts">
       <div class="content center-text">
-        <iframe width="80%" height="80" src="https://embed.acast.com/outsider-histoire-henry-darger" scrolling="no" frameborder="0" style="border:none;overflow:hidden;"></iframe>
+        <iframe width="70%" height="80" src="https://embed.acast.com/outsider-histoire-henry-darger" scrolling="no" frameborder="0" style="border:none;overflow:hidden;"></iframe>
         <a href="#" target="blank" class="bt-primary">More podcasts</a>
       </div>
       <img src="@/assets/img/ui/clouds/c-podcasts.png" alt="Podcasts" class="cb ci" id="c-podcasts">

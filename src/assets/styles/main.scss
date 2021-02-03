@@ -18,7 +18,6 @@ html, body{
     font-family: 'Courier Prime', monospace;
     color: $dark;
     font-size: 14px;
-    //overflow-x: hidden; // bug au scroll y (!!) todo: virer marges x
 }
 
 a{
@@ -364,7 +363,7 @@ $menu-h: 120px;
         top: -270px;
     }
     #c-podcasts{
-        top: -120px;
+        top: -190px;
     }
     #c-tour{
         top: -240px;
@@ -397,6 +396,10 @@ $menu-h: 120px;
     .cb{
         top: -500px;
     }       
+}
+
+#podcasts iframe{
+    margin-bottom: 20px;
 }
 
 .bigtitle{
