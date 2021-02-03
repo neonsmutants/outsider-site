@@ -74,9 +74,9 @@
 
     <div class="cloud left">
       <div class="content">
-        <p class="quote">« I dream that this transmedia project brings together past, present and future. »</p>
+        <p class="quote">« Music, visual arts and storytelling. »</p>
         <br>
-        <p>« I dream that this transmedia project <strong>brings together past, present and future</strong>. Music, visual arts and storytelling. I would like that through this audiovisual and interactive creation inspired by the work and life of the most famous outsider artist, the public questions <strong>the role and relationship of celebrity to the necessity of art</strong>. » <br><br> - Philippe Cohen Solal</p>
+        <p>« I dream that this transmedia project <strong>brings together past, present and future</strong>. . I would like that through this audiovisual and interactive creation inspired by the work and life of the most famous outsider artist, the public questions <strong>the role and relationship of celebrity to the necessity of art</strong>. » <br><br> - Philippe Cohen Solal</p>
       </div>
       <img src="@/assets/img/ui/clouds/c4.svg" class="cb" id="c4">
     </div>
@@ -178,7 +178,7 @@
           Darger's unpublished 15,000-page typewritten fantasy novel, <strong>The Story of the Vivian Girls, in What Is Known as the Realms of the Unreal, of the Glandeco-Angelinian War Storm, Caused by the Child Slave Rebellion</strong> — or, for short, In the Realms of the Unreal — and its 8,500-page handwritten sequel of sorts, Further Adventures of the Vivian Girls in Chicago, were the sagas upon which he based several hundred panoramic "illustrations," many of them double-sided and more than 9 feet in length.
         </p>
         <br>
-        <p><a href="https://en.wikipedia.org/wiki/Henry_Darger" target="blank" class="bt-primary">Read full bio</a></p>
+        <p><a href="http://www.officialhenrydarger.com/" target="blank" class="bt-primary">Read full bio</a></p>
       </div>
       <img src="@/assets/img/ui/clouds/c8.svg" class="cb" id="c8">
     </div>

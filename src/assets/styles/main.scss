@@ -139,12 +139,13 @@ $mask-w: 48px;
     left: 0;
     z-index: -1;
     margin: $mask-w;
-    width: calc(100% - #{$mask-w}/2);
-    height: calc(100% - #{$mask-w}/2);
+    width: calc(100% - #{$mask-w}*2);
+    height: calc(100% - #{$mask-w}*2);
     overflow: hidden;
 }
 #flipbook img{
-    //width: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -501,7 +502,7 @@ input[type=email]{
     font-style: italic;
     padding: 0 20px;
     border: 2px solid $dark;
-    width: calc(70% - 44px);
+    width: calc(70%);
     height: 54px;
     background: none;
     box-sizing: border-box;
@@ -550,4 +551,165 @@ button{
     height: 100%;
     width: 100%;
     position: absolute;
+}
+
+// RESPONSIVE
+
+// tablets
+//--------
+@media screen and (max-width: 768px) {
+
+    #footer .column2 {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+}
+
+// mobile
+//-------
+@media screen and (max-width: 414px) {
+
+//-------
+// clouds
+//-------
+
+.cloud{
+    position: relative;
+    width: calc(100% - 96px);
+
+    &.interstitial{
+        width: calc(100% - 96px);
+        margin: 0 auto;
+    }
+
+    &.left{
+        float: left;
+        margin-left: 48px;
+    }
+    &.right{
+        float: right;
+        margin-right: 48px;
+        text-align: right;
+    }
+
+    p{
+        width: 100%;
+    }
+
+    .big{
+        font-size: 20px;
+    }
+
+    .quote{
+        font-size: 30px;
+        font-style: italic;
+    }
+
+    .content{
+        position: relative;
+        z-index: 2;
+
+        &.center-text{
+            text-align: center;
+        }
+    }
+
+    .cb{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+
+        &.ci{
+            width: 100%;
+        }
+    }
+    &.left .cb{
+        left: 0;
+    }
+    &.right .cb{
+        right: 0;
+    }
+
+    #c0{
+        top: -300px;      
+    }
+    #c1{
+        top: -200px;
+    }
+    #c2{
+        top: -250px;
+    }
+    &.right #c3{
+        top: -160px;
+    }
+    #c4{
+        top: -100px;
+    }
+    &.right #c5{
+        top: -300px;
+    }
+    #c6{
+        top: -200px;
+    }
+    #c7{
+        top: -200px;
+    }
+    #c8{
+        top: -200px;
+    }
+    #c9{
+        top: -100px;
+    }
+    #c10{
+        top: -100px;
+    }
+    #c11{
+        top: 10px;
+    }
+    #c12{
+        top: -100px;
+    }
+    #c-shortfilm{
+        top: -150px;
+    }   
+    #c-clips{
+        top: -270px;
+    }
+    #c-podcasts{
+        top: -190px;
+    }
+    #c-tour{
+        top: -240px;
+    }
+    #c-press{
+        top: -260px;
+    }
+    #c-collections{
+        top: -370px;
+        opacity: .5;
+    }
+    #c-shop{
+        top: -260px;
+    }
+    #c-makingof{
+        top: -310px;
+        opacity: .5;
+    }
+}
+
+#c-darger{
+    width: calc(100% - 96px);
+    margin: 0 auto;
+    display: block;
+}
+
+#album{
+    width: calc(100% - 96px);
+    margin: 0 auto;
+    .cb{
+        top: 0;
+    }       
+}
+
 }
