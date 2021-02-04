@@ -25,7 +25,7 @@
 
     <div class="cloud right">
       <div class="content">
-        <p class="quote">« This is my story, this <br> is my song. »</p>
+        <p class="quote">« This is my story, this <br> is my song »</p>
         <p class="signature">- Henry Darger</p>
       </div>
       <img src="@/assets/img/ui/clouds/c1.svg" class="cb" id="c1">
@@ -35,7 +35,7 @@
 
     <div class="cloud left">
       <div class="content">
-        <p class="quote">« Both majestic and baroque. »</p>
+        <p class="quote">« Both majestic and baroque »</p>
         <p class="signature">- FIP</p>
       </div>
       <img src="@/assets/img/ui/clouds/c2.svg" class="cb" id="c2">
@@ -74,7 +74,7 @@
 
     <div class="cloud left">
       <div class="content">
-        <p class="quote">« Music, visual arts and storytelling. »</p>
+        <p class="quote">« Music, visual arts and storytelling »</p>
         <br>
         <p>« I dream that this transmedia project <strong>brings together past, present and future</strong>. . I would like that through this audiovisual and interactive creation inspired by the work and life of the most famous outsider artist, the public questions <strong>the role and relationship of celebrity to the necessity of art</strong>. » <br><br> - Philippe Cohen Solal</p>
       </div>
@@ -128,7 +128,7 @@
       <div class="content center-text">
         <a href="https://www.songkick.com/artists/3653951-philippe-cohen-solal" target="blank" class="bt-primary">Upcoming gigs</a>
       </div>
-      <img src="@/assets/img/ui/dates.png" alt="Tour" class="cb ci" id="c-tour">
+      <img src="@/assets/img/ui/clouds/c-tour.png" alt="Tour" class="cb ci" id="c-tour">
     </div>
     
     <div class="space"></div>
@@ -159,7 +159,7 @@
 
     <div class="cloud right">
       <div class="content">
-        <p class="quote">« I hated to see the day come when I will be grown up. I never wanted to. I wished to be young always. »</p>
+        <p class="quote">« I hated to see the day come when I will be grown up. I never wanted to. I wished to be young always »</p>
         <p class="signature">- Henry Darger</p>
       </div>
       <img src="@/assets/img/ui/clouds/c7.svg" class="cb" id="c7">
@@ -290,7 +290,7 @@
           </div>
           <div class="column2 nomargin" id="contact">
             <div class="title">Contact us</div>
-            <p>Send an email to <a href="mailto:info@yabasta-records.com">Yabasta Records</a>.</p>
+            <p>Send an email to <a href="mailto:contact@outsideronline.co">contact@outsideronline.co</a></p>
           </div>
         </div>
         <div class="clearfix"></div>
