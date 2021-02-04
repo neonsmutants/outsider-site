@@ -138,10 +138,9 @@ $mask-w: 48px;
     top: 0;
     left: 0;
     z-index: -1;
-    margin: $mask-w;
+    margin: $mask-w 0 0 $mask-w;
     width: calc(100% - #{$mask-w}*2);
     height: calc(100% - #{$mask-w}*2);
-    overflow: hidden;
 }
 #flipbook img{
     width: 100%;
@@ -282,7 +281,8 @@ $menu-h: 120px;
     }
 
     p{
-        width: 400px;
+        width: 320px;
+        line-height: 1.2;
     }
 
     .big{
@@ -290,7 +290,7 @@ $menu-h: 120px;
     }
 
     .quote{
-        font-size: 36px;
+        font-size: 34px;
         font-style: italic;
     }
 
@@ -322,7 +322,7 @@ $menu-h: 120px;
         top: -300px;      
     }
     #c1{
-        top: -200px;
+        top: -100px;
     }
     #c2{
         top: -250px;
@@ -570,27 +570,51 @@ button{
 //-------
 @media screen and (max-width: 414px) {
 
+$mobile-margin: 18px;
+
+#flipbook {
+    margin: 48px 0 0 0;
+    width: 100%;
+    height: calc(100% - 48px*2);
+}
+
+#mask-left, #mask-right{
+    display: none;
+}
+
+.bigtitle{
+    width: calc(100% - #{$mobile-margin}*2);
+    font-size: 52px;
+    text-align: center;
+    margin-left: $mobile-margin;
+}
+
+.bt-primary{
+    width: calc(100% - 5px);
+    padding: 18px 0;
+}
+
 //-------
 // clouds
 //-------
 
 .cloud{
     position: relative;
-    width: calc(100% - 96px);
+    width: 100%;
 
     &.interstitial{
-        width: calc(100% - 96px);
+        width: 100%;
         margin: 0 auto;
     }
 
     &.left{
         float: left;
-        margin-left: 48px;
+        margin-left: 0;
     }
     &.right{
-        float: right;
-        margin-right: 48px;
-        text-align: right;
+        float: left;
+        margin-right: 0;
+        text-align: left;
     }
 
     p{
@@ -598,17 +622,18 @@ button{
     }
 
     .big{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .quote{
-        font-size: 30px;
+        font-size: 24px;
         font-style: italic;
     }
 
     .content{
         position: relative;
         z-index: 2;
+        padding: 0 $mobile-margin;
 
         &.center-text{
             text-align: center;
@@ -699,13 +724,13 @@ button{
 }
 
 #c-darger{
-    width: calc(100% - 96px);
+    width: calc(100% - #{$mobile-margin}*2);
     margin: 0 auto;
     display: block;
 }
 
 #album{
-    width: calc(100% - 96px);
+    width: calc(100% - #{$mobile-margin}*2);
     margin: 0 auto;
     .cb{
         top: 0;

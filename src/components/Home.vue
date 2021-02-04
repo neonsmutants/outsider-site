@@ -67,7 +67,7 @@
       <div class="content center-text">
         <a href="https://www.youtube.com/watch?v=p3FKn5eVCwg&list=PL6c_5GyF9mZQXOmzXyQ5WsqcjZ3GnWYaL" target="blank" class="bt-primary">Watch videos</a>
       </div>
-      <img src="@/assets/img/ui/clips.png" alt="Videos" class="cb ci" id="c-clips">
+      <img src="@/assets/img/ui/clouds/c-videos.png" alt="Videos" class="cb ci" id="c-clips">
     </div>
 
     <div class="space"></div>
