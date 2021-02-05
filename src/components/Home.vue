@@ -1,5 +1,7 @@
 <template>
 <div>
+    <div id="mobile-overlay" v-if="isMobile"></div>
+
     <img src="@/assets/img/ui/scroll.svg" alt="Scroll down" id="scrolldown" v-bind:class="{ hidden: !showScroll }">
 
     <div class="space"></div>
@@ -18,7 +20,7 @@
         <p class="big">A <strong>musical album</strong> and <strong>trans-media project</strong></p>
         <p class="subtitle">by Philippe Cohen Solal & Mike Lindsay</p>
       </div>    
-      <img src="@/assets/img/ui/clouds/c0.svg" class="cb">
+      <img src="@/assets/img/ui/clouds/c0.svg" class="cb" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -28,7 +30,7 @@
         <p class="quote">« This is my story, this <br> is my song »</p>
         <p class="signature">- Henry Darger</p>
       </div>
-      <img src="@/assets/img/ui/clouds/c1.svg" class="cb">
+      <img src="@/assets/img/ui/clouds/c1.svg" class="cb" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -38,7 +40,7 @@
         <p class="quote">« Both majestic and baroque »</p>
         <p class="signature">- FIP</p>
       </div>
-      <img src="@/assets/img/ui/clouds/c2.svg" class="cb">
+      <img src="@/assets/img/ui/clouds/c2.svg" class="cb" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -48,7 +50,7 @@
       <div class="content center-text">     
         <a href="http://smarturl.it/outsiderdarger" target="blank" class="bt-primary">Listen to the album</a>
       </div>
-      <img src="@/assets/img/ui/album.png" alt="Album" class="cb ci">
+      <img src="@/assets/img/ui/album.png" alt="Album" class="cb ci" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -57,7 +59,7 @@
       <div class="content">
         <p><strong>OUTSIDER</strong> transports us into Henry Darger's imaginary and "unreal realm" by <strong>mixing music and dreamlike imagery</strong>. Based on animations, this video creation invites the spectator to immerse himself in <strong>the hallucinatory world of this phenomenal artist</strong>.</p>
       </div>
-      <img src="@/assets/img/ui/clouds/c3.svg" class="cb">
+      <img src="@/assets/img/ui/clouds/c3.svg" class="cb" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -67,7 +69,7 @@
       <div class="content center-text">
         <a href="https://www.youtube.com/watch?v=p3FKn5eVCwg&list=PL6c_5GyF9mZQXOmzXyQ5WsqcjZ3GnWYaL" target="blank" class="bt-primary">Watch videos</a>
       </div>
-      <img src="@/assets/img/ui/clouds/c-videos.png" alt="Videos" class="cb ci" id="c-clips">
+      <img src="@/assets/img/ui/clouds/c-videos.png" alt="Videos" class="cb ci" id="c-clips" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -76,9 +78,9 @@
       <div class="content">
         <p class="quote">« Music, visual arts and storytelling »</p>
         <br>
-        <p>« I dream that this transmedia project <strong>brings together past, present and future</strong>. . I would like that through this audiovisual and interactive creation inspired by the work and life of the most famous outsider artist, the public questions <strong>the role and relationship of celebrity to the necessity of art</strong>. » <br><br> - Philippe Cohen Solal</p>
+        <p>« I dream that this transmedia project <strong>brings together past, present and future</strong>. I would like that through this audiovisual and interactive creation inspired by the work and life of the most famous outsider artist, the public questions <strong>the role and relationship of celebrity to the necessity of art</strong>. » <br><br> - Philippe Cohen Solal</p>
       </div>
-      <img src="@/assets/img/ui/clouds/c4.svg" class="cb" id="c4">
+      <img src="@/assets/img/ui/clouds/c4.svg" class="cb" id="c4" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -86,10 +88,10 @@
     <!-- podcasts -->
     <div class="cloud interstitial" id="podcasts">
       <div class="content center-text">
-        <iframe width="70%" height="80" src="https://embed.acast.com/outsider-histoire-henry-darger" scrolling="no" frameborder="0" style="border:none;overflow:hidden;"></iframe>
+        <iframe src="https://embed.acast.com/outsider-histoire-henry-darger" scrolling="no" frameborder="0" style="border:none;overflow:hidden;"></iframe>
         <a href="#" target="blank" class="bt-primary">More podcasts</a>
       </div>
-      <img src="@/assets/img/ui/clouds/c-podcasts.png" alt="Podcasts" class="cb ci" id="c-podcasts">
+      <img src="@/assets/img/ui/clouds/c-podcasts.png" alt="Podcasts" class="cb ci" id="c-podcasts" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -118,7 +120,7 @@
           love songs.
         </p>       
       </div>
-      <img src="@/assets/img/ui/clouds/c5.svg" class="cb" id="c5">
+      <img src="@/assets/img/ui/clouds/c5.svg" class="cb" id="c5" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -128,7 +130,7 @@
       <div class="content center-text">
         <a href="https://www.songkick.com/artists/3653951-philippe-cohen-solal" target="blank" class="bt-primary">Upcoming gigs</a>
       </div>
-      <img src="@/assets/img/ui/clouds/c-tour.png" alt="Tour" class="cb ci" id="c-tour">
+      <img src="@/assets/img/ui/clouds/c-tour.png" alt="Tour" class="cb ci" id="c-tour" v-if="!isMobile">
     </div>
     
     <div class="space"></div>
@@ -138,7 +140,7 @@
         <p class="quote">« It sounds like a very twisted long-forgotten musical, with an evil twist and a very innocent blanket wrapped around it. It’s classic, it’s beautiful and it’s experimental. »</p>
         <p class="signature">- Mike Lindsay</p>
       </div>
-      <img src="@/assets/img/ui/clouds/c6.svg" class="cb" id="c6">
+      <img src="@/assets/img/ui/clouds/c6.svg" class="cb" id="c6" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -148,7 +150,7 @@
       <div class="content center-text">
         <a href="https://linktr.ee/outsiderpress" target="blank" class="bt-primary">They talk about us</a>
       </div>
-      <img src="@/assets/img/ui/press.png" alt="Press" class="cb ci" id="c-press">
+      <img src="@/assets/img/ui/press.png" alt="Press" class="cb ci" id="c-press" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -162,7 +164,7 @@
         <p class="quote">« I hated to see the day come when I will be grown up. I never wanted to. I wished to be young always »</p>
         <p class="signature">- Henry Darger</p>
       </div>
-      <img src="@/assets/img/ui/clouds/c7.svg" class="cb" id="c7">
+      <img src="@/assets/img/ui/clouds/c7.svg" class="cb" id="c7" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -180,7 +182,7 @@
         <br>
         <p><a href="http://www.officialhenrydarger.com/" target="blank" class="bt-primary">Read full bio</a></p>
       </div>
-      <img src="@/assets/img/ui/clouds/c8.svg" class="cb" id="c8">
+      <img src="@/assets/img/ui/clouds/c8.svg" class="cb" id="c8" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -191,7 +193,7 @@
         <a target="blank" class="bt-primary disabled">Collections around the globe</a>
         <div class="alert">Coming soon !</div>
       </div>
-      <img src="@/assets/img/ui/globe.png" alt="Collections around the globe" class="cb ci" id="c-collections">
+      <img src="@/assets/img/ui/globe.png" alt="Collections around the globe" class="cb ci" id="c-collections" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -209,7 +211,7 @@
         <br>
         <a href="https://yabasta-records.com/en/philippe-cohen-solal" target="blank" class="persolink">> More infos</a>
       </div>
-      <img src="@/assets/img/ui/clouds/c9.svg" class="cb" id="c9">
+      <img src="@/assets/img/ui/clouds/c9.svg" class="cb" id="c9" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -223,7 +225,7 @@
         <br>
         <a href="http://www.mike-lindsay.com" target="blank" class="persolink">> More infos</a>
       </div>
-      <img src="@/assets/img/ui/clouds/c10.svg" class="cb" id="c10">
+      <img src="@/assets/img/ui/clouds/c10.svg" class="cb" id="c10" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -237,7 +239,7 @@
         <br>
         <!-- <a href="#" target="blank" class="persolink">> More infos</a> -->
       </div>
-      <img src="@/assets/img/ui/clouds/c11.svg" class="cb" id="c11">
+      <img src="@/assets/img/ui/clouds/c11.svg" class="cb" id="c11" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -251,7 +253,7 @@
         <br>
         <a href="http://www.hannahpeel.com" target="blank" class="persolink">> More infos</a>
       </div>
-      <img src="@/assets/img/ui/clouds/c12.svg" class="cb" id="c12">
+      <img src="@/assets/img/ui/clouds/c12.svg" class="cb" id="c12" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -262,7 +264,7 @@
         <a target="blank" class="bt-primary disabled">Making-of</a>
         <div class="alert">Coming soon !</div>
       </div>
-      <img src="@/assets/img/ui/makingof.png" alt="Making Of" class="cb ci" id="c-makingof">
+      <img src="@/assets/img/ui/makingof.png" alt="Making Of" class="cb ci" id="c-makingof" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -272,7 +274,7 @@
       <div class="content center-text">
         <a href="https://yabasta-records.com/categorie-produit/outsider" target="blank" class="bt-primary">Visit our shop</a>
       </div>
-      <img src="@/assets/img/ui/clouds/c-shop.png" alt="Shop" class="cb ci" id="c-shop">
+      <img src="@/assets/img/ui/clouds/c-shop.png" alt="Shop" class="cb ci" id="c-shop" v-if="!isMobile">
     </div>
     
     <div class="space"></div>
@@ -328,17 +330,20 @@ export default {
   data() {
     return {
       showNewsletter: false,
-      showScroll: true
+      showScroll: true,
+      isMobile: false
     }
   },
   created() {
     let that = this
-      window.addEventListener('scroll', hideScrollHandler)
-      function hideScrollHandler() {
-        that.showScroll = false
-        console.log(that.showScroll)
-        window.removeEventListener('scroll', hideScrollHandler)
-      }
+    window.addEventListener('scroll', hideScrollHandler)
+    function hideScrollHandler() {
+      that.showScroll = false
+      window.removeEventListener('scroll', hideScrollHandler)
+    }
+
+    if(window.innerWidth <= 414)
+      this.isMobile = true
   }
 }
 </script>

@@ -148,6 +148,11 @@ $mask-w: 48px;
     object-fit: cover;
 }
 
+#podcasts iframe{
+    width: 100%;
+    max-height: 120px;
+}
+
 #preloader{
     width: 100%;
     height: 100%;
@@ -202,7 +207,7 @@ $menu-h: 120px;
     height: $menu-h;
     background-color: $cream;
     font-family: 'DargerScript';
-    transform: translate3d(0, $menu-h, 0);
+    transform: translate3d(0, 100%, 0);
     transition: 500ms ease-in-out;
     z-index: 2000;
     
@@ -591,6 +596,25 @@ button{
 //-------
 @media screen and (max-width: 414px) {
 
+    body{
+        color: $cream;
+    }
+    .bt-primary{
+        color: $cream;
+        border-color: $cream;
+    }
+
+    #mobile-overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: $dark;
+        opacity: .4;
+    }
+
     $mobile-margin: 18px;
 
     #flipbook {
@@ -640,15 +664,17 @@ button{
 
         p{
             width: 100%;
-        }
-
-        .big{
             font-size: 18px;
         }
 
+        .big{
+            font-size: 28px;
+        }
+
         .quote{
-            font-size: 24px;
+            font-size: 48px;
             font-style: italic;
+            overflow-wrap: break-word;
         }
 
         .content{
@@ -675,46 +701,6 @@ button{
         }
         &.right .cb{
             right: 0;
-        }
-
-        #c0{
-            top: -300px;      
-        }
-        #c1{
-            top: -200px;
-        }
-        #c2{
-            top: -250px;
-        }
-        &.right #c3{
-            top: -160px;
-        }
-        #c4{
-            top: -100px;
-        }
-        &.right #c5{
-            top: -300px;
-        }
-        #c6{
-            top: -200px;
-        }
-        #c7{
-            top: -200px;
-        }
-        #c8{
-            top: -200px;
-        }
-        #c9{
-            top: -100px;
-        }
-        #c10{
-            top: -100px;
-        }
-        #c11{
-            top: 10px;
-        }
-        #c12{
-            top: -100px;
         }
         #c-shortfilm{
             top: -150px;
@@ -744,6 +730,16 @@ button{
         }
     }
 
+    .cloud#c0 {
+        margin-left: 0;
+    }
+    .cloud#c1 {
+        margin-left: 0;
+    }
+    .cloud#c2 {
+        margin-left: 0;
+    }
+
     #c-darger{
         width: calc(100% - #{$mobile-margin}*2);
         margin: 0 auto;
@@ -751,11 +747,61 @@ button{
     }
 
     #album{
-        width: calc(100% - #{$mobile-margin}*2);
+        width: calc(100% - #{$mobile-margin});
         margin: 0 auto;
         .cb{
             top: 0;
         }       
     }
 
+    .avatar{
+        width: 100%;
+    }
+
+    #scrolldown{
+        display: none;
+    }
+
+    #preloader .heading{
+        width: 80%;
+    }
+
+    .video-container{
+        width: calc(100% - #{$mobile-margin});
+    }
+
+    .space{
+        height: 600px;
+    }
+
+    .persolink {
+        color: $cream;
+    }
+
+    #footer{
+        .content{
+            padding: 100px $mobile-margin 0;
+            color: $dark;
+        }
+        a.logo{
+            float: none;
+            margin-right: 15px;
+            margin-bottom: 20px;
+            display: block;
+        }
+    }
+
+    #menu{
+        height: 50%;
+        ul{
+            width: calc(100% - #{$mobile-margin});
+            margin: $mobile-margin;
+
+            li{
+                display: block;
+                float: none;
+                margin-bottom: 15px;
+            }
+        }
+    }
 }
