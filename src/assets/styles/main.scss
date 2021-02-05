@@ -244,12 +244,17 @@ $menu-h: 120px;
 }
 
 #scrolldown{
-    position: absolute;
-    width: 80px;
-    margin: 0 auto;
-    bottom: 80px;
-    left: 0px;
-    right: 0px;
+    position: fixed;
+    //width: 80px;
+    //margin: 0 auto;
+    bottom: $mask-w/2;
+    right: $mask-w/2;
+    z-index: 998;
+    transition: transform 400ms ease-in-out;
+
+    &.hidden{
+        transform: translate3d(100%, 0, 0);
+    }
 }
 
 .space{
@@ -318,17 +323,33 @@ $menu-h: 120px;
         right: -41px;
     }
 
-    #c0{
-        top: -170px;      
+    &#c0{
+        margin-left: 20%;
+        .cb{
+            top: -90px;
+        }      
     }
-    #c1{
-        top: -70px;
+    &#c1{       
+        margin-right: 24%;
+        .cb{
+            top: -65px;
+            left: -25px;
+        }  
     }
-    #c2{
-        top: -160px;
+    &#c2{
+        margin-left: 22%;
+        .cb{
+            top: -70px;
+            left: -95px;
+        }  
     }
-    &.right #c3{
-        top: -90px;
+    &#c3{
+        margin-right: 17%;
+        text-align: left;
+        .cb{
+            top: -105px;
+            left: -100px;
+        }        
     }
     #c4{
         top: -100px;
@@ -386,7 +407,7 @@ $menu-h: 120px;
 }
 
 #c-darger{
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     display: block;
 }
@@ -570,171 +591,171 @@ button{
 //-------
 @media screen and (max-width: 414px) {
 
-$mobile-margin: 18px;
+    $mobile-margin: 18px;
 
-#flipbook {
-    margin: 48px 0 0 0;
-    width: 100%;
-    height: calc(100% - 48px*2);
-}
-
-#mask-left, #mask-right{
-    display: none;
-}
-
-.bigtitle{
-    width: calc(100% - #{$mobile-margin}*2);
-    font-size: 52px;
-    text-align: center;
-    margin-left: $mobile-margin;
-}
-
-.bt-primary{
-    width: calc(100% - 5px);
-    padding: 18px 0;
-}
-
-//-------
-// clouds
-//-------
-
-.cloud{
-    position: relative;
-    width: 100%;
-
-    &.interstitial{
+    #flipbook {
+        margin: 48px 0 0 0;
         width: 100%;
-        margin: 0 auto;
+        height: calc(100% - 48px*2);
     }
 
-    &.left{
-        float: left;
-        margin-left: 0;
-    }
-    &.right{
-        float: left;
-        margin-right: 0;
-        text-align: left;
+    #mask-left, #mask-right{
+        display: none;
     }
 
-    p{
-        width: 100%;
+    .bigtitle{
+        width: calc(100% - #{$mobile-margin}*2);
+        font-size: 52px;
+        text-align: center;
+        margin-left: $mobile-margin;
     }
 
-    .big{
-        font-size: 18px;
+    .bt-primary{
+        width: calc(100% - 5px);
+        padding: 18px 0;
     }
 
-    .quote{
-        font-size: 24px;
-        font-style: italic;
-    }
+    //-------
+    // clouds
+    //-------
 
-    .content{
+    .cloud{
         position: relative;
-        z-index: 2;
-        padding: 0 $mobile-margin;
-
-        &.center-text{
-            text-align: center;
-        }
-    }
-
-    .cb{
-        position: absolute;
-        z-index: 1;
         width: 100%;
 
-        &.ci{
+        &.interstitial{
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        &.left{
+            float: left;
+            margin-left: 0;
+        }
+        &.right{
+            float: left;
+            margin-right: 0;
+            text-align: left;
+        }
+
+        p{
             width: 100%;
         }
-    }
-    &.left .cb{
-        left: 0;
-    }
-    &.right .cb{
-        right: 0;
+
+        .big{
+            font-size: 18px;
+        }
+
+        .quote{
+            font-size: 24px;
+            font-style: italic;
+        }
+
+        .content{
+            position: relative;
+            z-index: 2;
+            padding: 0 $mobile-margin;
+
+            &.center-text{
+                text-align: center;
+            }
+        }
+
+        .cb{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+
+            &.ci{
+                width: 100%;
+            }
+        }
+        &.left .cb{
+            left: 0;
+        }
+        &.right .cb{
+            right: 0;
+        }
+
+        #c0{
+            top: -300px;      
+        }
+        #c1{
+            top: -200px;
+        }
+        #c2{
+            top: -250px;
+        }
+        &.right #c3{
+            top: -160px;
+        }
+        #c4{
+            top: -100px;
+        }
+        &.right #c5{
+            top: -300px;
+        }
+        #c6{
+            top: -200px;
+        }
+        #c7{
+            top: -200px;
+        }
+        #c8{
+            top: -200px;
+        }
+        #c9{
+            top: -100px;
+        }
+        #c10{
+            top: -100px;
+        }
+        #c11{
+            top: 10px;
+        }
+        #c12{
+            top: -100px;
+        }
+        #c-shortfilm{
+            top: -150px;
+        }   
+        #c-clips{
+            top: -270px;
+        }
+        #c-podcasts{
+            top: -190px;
+        }
+        #c-tour{
+            top: -240px;
+        }
+        #c-press{
+            top: -260px;
+        }
+        #c-collections{
+            top: -370px;
+            opacity: .5;
+        }
+        #c-shop{
+            top: -260px;
+        }
+        #c-makingof{
+            top: -310px;
+            opacity: .5;
+        }
     }
 
-    #c0{
-        top: -300px;      
+    #c-darger{
+        width: calc(100% - #{$mobile-margin}*2);
+        margin: 0 auto;
+        display: block;
     }
-    #c1{
-        top: -200px;
-    }
-    #c2{
-        top: -250px;
-    }
-    &.right #c3{
-        top: -160px;
-    }
-    #c4{
-        top: -100px;
-    }
-    &.right #c5{
-        top: -300px;
-    }
-    #c6{
-        top: -200px;
-    }
-    #c7{
-        top: -200px;
-    }
-    #c8{
-        top: -200px;
-    }
-    #c9{
-        top: -100px;
-    }
-    #c10{
-        top: -100px;
-    }
-    #c11{
-        top: 10px;
-    }
-    #c12{
-        top: -100px;
-    }
-    #c-shortfilm{
-        top: -150px;
-    }   
-    #c-clips{
-        top: -270px;
-    }
-    #c-podcasts{
-        top: -190px;
-    }
-    #c-tour{
-        top: -240px;
-    }
-    #c-press{
-        top: -260px;
-    }
-    #c-collections{
-        top: -370px;
-        opacity: .5;
-    }
-    #c-shop{
-        top: -260px;
-    }
-    #c-makingof{
-        top: -310px;
-        opacity: .5;
-    }
-}
 
-#c-darger{
-    width: calc(100% - #{$mobile-margin}*2);
-    margin: 0 auto;
-    display: block;
-}
-
-#album{
-    width: calc(100% - #{$mobile-margin}*2);
-    margin: 0 auto;
-    .cb{
-        top: 0;
-    }       
-}
+    #album{
+        width: calc(100% - #{$mobile-margin}*2);
+        margin: 0 auto;
+        .cb{
+            top: 0;
+        }       
+    }
 
 }

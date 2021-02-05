@@ -70,7 +70,8 @@ export default {
 
       }, false)
 
-      img.src = require("@/assets/img/flipbook/out-site-export_"+(i*2)+".jpg")
+      img.src = require("@/assets/img/flipbook/flipbook_"+i+".jpg")
+      //img.src = require("@/assets/img/flipbook/flipbook_"+(i*2)+".jpg")
     }
 
   },

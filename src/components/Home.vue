@@ -1,6 +1,6 @@
 <template>
 <div>
-    <!-- <img src="@/assets/img/ui/scroll.svg" alt="Scroll down" id="scrolldown"> -->
+    <img src="@/assets/img/ui/scroll.svg" alt="Scroll down" id="scrolldown" v-bind:class="{ hidden: !showScroll }">
 
     <div class="space"></div>
     <div class="space"></div>
@@ -8,37 +8,37 @@
 
     <!-- embed youtube -->    
     <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/p3FKn5eVCwg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/G8h12wI1tDc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div class="space"></div>
     
-    <div class="cloud left">
+    <div class="cloud left" id="c0">
       <div class="content">
         <p class="big">A <strong>musical album</strong> and <strong>trans-media project</strong></p>
         <p class="subtitle">by Philippe Cohen Solal & Mike Lindsay</p>
       </div>    
-      <img src="@/assets/img/ui/clouds/c0.svg" class="cb" id="c0">
+      <img src="@/assets/img/ui/clouds/c0.svg" class="cb">
     </div>
 
     <div class="space"></div>
 
-    <div class="cloud right">
+    <div class="cloud right" id="c1">
       <div class="content">
         <p class="quote">« This is my story, this <br> is my song »</p>
         <p class="signature">- Henry Darger</p>
       </div>
-      <img src="@/assets/img/ui/clouds/c1.svg" class="cb" id="c1">
+      <img src="@/assets/img/ui/clouds/c1.svg" class="cb">
     </div>
 
     <div class="space"></div>
 
-    <div class="cloud left">
+    <div class="cloud left" id="c2">
       <div class="content">
         <p class="quote">« Both majestic and baroque »</p>
         <p class="signature">- FIP</p>
       </div>
-      <img src="@/assets/img/ui/clouds/c2.svg" class="cb" id="c2">
+      <img src="@/assets/img/ui/clouds/c2.svg" class="cb">
     </div>
 
     <div class="space"></div>
@@ -53,11 +53,11 @@
 
     <div class="space"></div>
 
-    <div class="cloud right">
+    <div class="cloud right" id="c3">
       <div class="content">
         <p><strong>OUTSIDER</strong> transports us into Henry Darger's imaginary and "unreal realm" by <strong>mixing music and dreamlike imagery</strong>. Based on animations, this video creation invites the spectator to immerse himself in <strong>the hallucinatory world of this phenomenal artist</strong>.</p>
       </div>
-      <img src="@/assets/img/ui/clouds/c3.svg" class="cb" id="c3">
+      <img src="@/assets/img/ui/clouds/c3.svg" class="cb">
     </div>
 
     <div class="space"></div>
@@ -270,7 +270,7 @@
     <!-- shop -->
     <div class="cloud interstitial" id="shop">
       <div class="content center-text">
-        <a href="https://yabasta-records.com/boutique" target="blank" class="bt-primary">Visit our shop</a>
+        <a href="https://yabasta-records.com/categorie-produit/outsider" target="blank" class="bt-primary">Visit our shop</a>
       </div>
       <img src="@/assets/img/ui/clouds/c-shop.png" alt="Shop" class="cb ci" id="c-shop">
     </div>
@@ -282,7 +282,7 @@
       <div class="content">
         <div class="row">
           <div class="column2">
-            <form action="">
+            <form v-if="showNewsletter">
               <label for="newsletter" class="title">Subscribe to our newsletter !</label>
               <input type="email" name="newsletter" id="input-newsletter" placeholder="Email">
               <button type="submit">Send</button>
@@ -312,7 +312,7 @@
           <div class="column2 nomargin">
             <p class="minitext">
               <strong>OUTSIDER</strong>, a musical album & transmedia project inspired by Henry Darger. 
-              <br>Website by <a href="https://www.behance.net/neonsmutants" target="blank">Néons Mutants</a>. All rights reserved © 2020.
+              <br>Website by <a href="https://neonsmutants.github.io/" target="blank">Néons Mutants</a>. All rights reserved © 2020.
             </p>
           </div>
         </div>
@@ -324,6 +324,21 @@
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Home',
+  data() {
+    return {
+      showNewsletter: false,
+      showScroll: true
+    }
+  },
+  created() {
+    let that = this
+      window.addEventListener('scroll', hideScrollHandler)
+      function hideScrollHandler() {
+        that.showScroll = false
+        console.log(that.showScroll)
+        window.removeEventListener('scroll', hideScrollHandler)
+      }
+  }
 }
 </script>
