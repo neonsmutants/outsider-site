@@ -4,8 +4,8 @@
 
     <img src="@/assets/img/ui/scroll.svg" alt="Scroll down" id="scrolldown" v-bind:class="{ hidden: !showScroll }">
 
-    <div class="space"></div>
-    <div class="space"></div>
+    <div class="space" v-if="!isMobile"></div>
+    <div class="space" v-if="!isMobile"></div>
     <div class="space"></div>
 
     <!-- embed youtube -->    
@@ -47,10 +47,11 @@
 
     <!-- album -->
     <div class="cloud" id="album">
+      <img src="@/assets/img/ui/clouds/c-album-mobile.png" alt="Album" class="cb ci" v-if="isMobile">
+      <img src="@/assets/img/ui/clouds/c-album.png" alt="Album" class="cb ci" v-if="!isMobile">
       <div class="content center-text">     
         <a href="http://smarturl.it/outsiderdarger" target="blank" class="bt-primary">Listen to the album</a>
-      </div>
-      <img src="@/assets/img/ui/album.png" alt="Album" class="cb ci" v-if="!isMobile">
+      </div> 
     </div>
 
     <div class="space"></div>
@@ -66,10 +67,11 @@
 
     <!-- videos -->
     <div class="cloud interstitial" id="videos">
+      <img src="@/assets/img/ui/clouds/c-videos-mobile.png" alt="Videos" class="cb ci" id="c-clips" v-if="isMobile">
+      <img src="@/assets/img/ui/clouds/c-videos.png" alt="Videos" class="cb ci" id="c-clips" v-if="!isMobile">
       <div class="content center-text">
         <a href="https://www.youtube.com/watch?v=p3FKn5eVCwg&list=PL6c_5GyF9mZQXOmzXyQ5WsqcjZ3GnWYaL" target="blank" class="bt-primary">Watch videos</a>
-      </div>
-      <img src="@/assets/img/ui/clouds/c-videos.png" alt="Videos" class="cb ci" id="c-clips" v-if="!isMobile">
+      </div>     
     </div>
 
     <div class="space"></div>
@@ -127,10 +129,11 @@
 
     <!-- tour -->
     <div class="cloud interstitial" id="tour">
+      <img src="@/assets/img/ui/clouds/c-tour-mobile.png" alt="Tour" class="cb ci" id="c-tour" v-if="isMobile">
+      <img src="@/assets/img/ui/clouds/c-tour.png" alt="Tour" class="cb ci" id="c-tour" v-if="!isMobile">
       <div class="content center-text">
         <a href="https://www.songkick.com/artists/3653951-philippe-cohen-solal" target="blank" class="bt-primary">Upcoming gigs</a>
       </div>
-      <img src="@/assets/img/ui/clouds/c-tour.png" alt="Tour" class="cb ci" id="c-tour" v-if="!isMobile">
     </div>
     
     <div class="space"></div>
@@ -147,10 +150,11 @@
 
     <!-- press -->
     <div class="cloud interstitial" id="press">
+      <img src="@/assets/img/ui/clouds/c-press-mobile.png" alt="Press" class="cb ci" id="c-press" v-if="isMobile">
+      <img src="@/assets/img/ui/clouds/c-press.png" alt="Press" class="cb ci" id="c-press" v-if="!isMobile">
       <div class="content center-text">
         <a href="https://linktr.ee/outsiderpress" target="blank" class="bt-primary">They talk about us</a>
-      </div>
-      <img src="@/assets/img/ui/press.png" alt="Press" class="cb ci" id="c-press" v-if="!isMobile">
+      </div>   
     </div>
 
     <div class="space"></div>
@@ -189,11 +193,12 @@
 
     <!-- collections -->
     <div class="cloud interstitial" id="collections">
+      <img src="@/assets/img/ui/clouds/c-collections-mobile.png" alt="Collections around the globe" class="cb ci" id="c-collections" v-if="isMobile">
+      <img src="@/assets/img/ui/clouds/c-collections.png" alt="Collections around the globe" class="cb ci" id="c-collections" v-if="!isMobile">
       <div class="content center-text">
         <a target="blank" class="bt-primary disabled">Collections around the globe</a>
         <div class="alert">Coming soon !</div>
-      </div>
-      <img src="@/assets/img/ui/globe.png" alt="Collections around the globe" class="cb ci" id="c-collections" v-if="!isMobile">
+      </div>    
     </div>
 
     <div class="space"></div>
@@ -260,21 +265,23 @@
 
     <!-- making-of -->
     <div class="cloud interstitial" id="making-of">
+      <img src="@/assets/img/ui/clouds/c-makingof-mobile.png" alt="Making Of" class="cb ci" id="c-makingof" v-if="isMobile">
+      <img src="@/assets/img/ui/clouds/c-makingof.png" alt="Making Of" class="cb ci" id="c-makingof" v-if="!isMobile">
       <div class="content center-text">
         <a target="blank" class="bt-primary disabled">Making-of</a>
         <div class="alert">Coming soon !</div>
-      </div>
-      <img src="@/assets/img/ui/makingof.png" alt="Making Of" class="cb ci" id="c-makingof" v-if="!isMobile">
+      </div>  
     </div>
 
     <div class="space"></div>
 
     <!-- shop -->
     <div class="cloud interstitial" id="shop">
+      <img src="@/assets/img/ui/clouds/c-shop-mobile.png" alt="Shop" class="cb ci" id="c-shop" v-if="isMobile">
+      <img src="@/assets/img/ui/clouds/c-shop.png" alt="Shop" class="cb ci" id="c-shop" v-if="!isMobile">
       <div class="content center-text">
         <a href="https://yabasta-records.com/categorie-produit/outsider" target="blank" class="bt-primary">Visit our shop</a>
-      </div>
-      <img src="@/assets/img/ui/clouds/c-shop.png" alt="Shop" class="cb ci" id="c-shop" v-if="!isMobile">
+      </div> 
     </div>
     
     <div class="space"></div>

@@ -602,6 +602,12 @@ button{
     .bt-primary{
         color: $cream;
         border-color: $cream;
+        width: calc(100% - 5px);
+        padding: 18px 0;
+
+        &:hover{
+            background: none;
+        }
     }
 
     #mobile-overlay{
@@ -632,11 +638,6 @@ button{
         font-size: 52px;
         text-align: center;
         margin-left: $mobile-margin;
-    }
-
-    .bt-primary{
-        width: calc(100% - 5px);
-        padding: 18px 0;
     }
 
     //-------
@@ -688,12 +689,12 @@ button{
         }
 
         .cb{
-            position: absolute;
-            z-index: 1;
-            width: 100%;
+            position: inherit;        
+            
 
             &.ci{
-                width: 100%;
+                width: calc(100% - #{$mobile-margin}*2);
+                margin: 0 $mobile-margin 20px;
             }
         }
         &.left .cb{
@@ -702,30 +703,31 @@ button{
         &.right .cb{
             right: 0;
         }
+
         #c-shortfilm{
-            top: -150px;
+            top: 0;
         }   
         #c-clips{
-            top: -270px;
+            top: 0;
         }
         #c-podcasts{
-            top: -190px;
+            top: 0;
         }
         #c-tour{
-            top: -240px;
+            top: 0;
         }
         #c-press{
-            top: -260px;
+            top: 0;
         }
         #c-collections{
-            top: -370px;
+            top: 0;
             opacity: .5;
         }
         #c-shop{
-            top: -260px;
+            top: 0;
         }
         #c-makingof{
-            top: -310px;
+            top: 0;
             opacity: .5;
         }
     }
@@ -771,7 +773,7 @@ button{
     }
 
     .space{
-        height: 600px;
+        height: 400px;
     }
 
     .persolink {
