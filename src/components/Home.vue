@@ -313,8 +313,10 @@
         <div class="row">
           <div class="column2 nomargin">
             <p class="minitext">
-              <strong>OUTSIDER</strong>, a musical album & transmedia project inspired by Henry Darger. 
-              <br>Website by <a href="https://neonsmutants.github.io/" target="blank">Néons Mutants</a>. All rights reserved © 2020.
+              <strong>OUTSIDER</strong>, a musical album & transmedia project inspired by Henry Darger.
+              <br>Drawings & animations by Gabriel Jacquel. 
+              Website by <a href="https://neonsmutants.github.io/" target="blank">Néons Mutants</a>.       
+              All rights reserved © <span>{{date}}</span>.
             </p>
           </div>
         </div>
@@ -331,7 +333,8 @@ export default {
     return {
       showNewsletter: false,
       showScroll: true,
-      isMobile: false
+      isMobile: false,
+      date: null
     }
   },
   created() {
@@ -344,6 +347,8 @@ export default {
 
     if(window.innerWidth <= 414)
       this.isMobile = true
+
+    this.date = new Date().getFullYear()
   }
 }
 </script>
