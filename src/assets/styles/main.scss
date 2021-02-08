@@ -390,7 +390,7 @@ $menu-h: 120px;
         top: -430px;
     }
     #c-podcasts{
-        top: -190px;
+        top: -210px;
     }
     #c-tour{
         top: -280px;
@@ -412,7 +412,7 @@ $menu-h: 120px;
 }
 
 #c-darger{
-    width: 60%;
+    width: calc(100% - #{$mask-w}/2);
     margin: 0 auto;
     display: block;
 }
@@ -574,7 +574,7 @@ button{
 .video-container iframe {
     left: 0; 
     top: 0; 
-    height: 100%;
+    height: calc(100% - 108px);
     width: 100%;
     position: absolute;
 }
@@ -583,12 +583,25 @@ button{
 
 // tablets
 //--------
+@media screen and (max-width: 1024px) {
+
+    #footer {
+        .content{
+            padding: 20% $mask-w 0;
+        }
+    }
+}
 @media screen and (max-width: 768px) {
 
-    #footer .column2 {
-        width: 100%;
-        float: none;
-        margin-right: 0;
+    #footer {
+        .content{
+            padding: 20% $mask-w 0;
+        }
+        .column2 {
+            width: 100%;
+            float: none;
+            margin-right: 0;
+        }
     }
 }
 
@@ -770,10 +783,15 @@ button{
 
     .video-container{
         width: calc(100% - #{$mobile-margin});
+        margin-top: 60px;
+    }
+        
+    .video-container iframe {
+        height: 100%;
     }
 
     .space{
-        height: 400px;
+        height: 300px;
     }
 
     .persolink {

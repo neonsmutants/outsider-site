@@ -6,14 +6,13 @@
 
     <div class="space" v-if="!isMobile"></div>
     <div class="space" v-if="!isMobile"></div>
-    <div class="space"></div>
 
     <!-- embed youtube -->    
     <div class="video-container">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/G8h12wI1tDc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-    <div class="space"></div>
+    <div class="space" v-if="!isMobile"></div>
     
     <div class="cloud left" id="c0">
       <div class="content">
@@ -173,7 +172,9 @@
 
     <div class="space"></div>
 
-    <img src="@/assets/img/ui/darger.png" alt="Darger" id="c-darger">
+    <img src="@/assets/img/ui/darger.jpg" alt="Darger" id="c-darger">
+
+    <div class="space"></div>
 
     <div class="cloud left">
       <div class="content">
@@ -310,7 +311,7 @@
             <a href="https://fb.com/philippecohensolalofficial" target="blank" class="logo"><img src="@/assets/img/ui/logo-fb.svg"></a>
             <a href="https://www.instagram.com/philippecohensolal/" target="blank" class="logo"><img src="@/assets/img/ui/logo-insta.svg"></a>
           </div>
-          <div class="column2 nomargin">        
+          <div class="column2 nomargin"> 
             <a href="https://open.spotify.com/album/02tG8xdQhgLxZHxb50SEC4?si=ZWPbWQVRTQ-yWYAw_kGLZg" target="blank" class="logo"><img src="@/assets/img/ui/logo-spotify.svg"></a>
             <a href="https://music.apple.com/fr/album/outsider-feat-adam-glover/1535924537?uo=4&ls=1&app=music&at=11lEW&ct=v0zuwf" target="blank" class="logo"><img src="@/assets/img/ui/logo-apple.svg"></a>
             <a href="https://www.amazon.com/dp/B08L81Z756?tag=smarturl-pivot-20" target="blank" class="logo"><img src="@/assets/img/ui/logo-amazon.svg"></a>
@@ -321,7 +322,10 @@
           <div class="column2 nomargin">
             <p class="minitext">
               <strong>OUTSIDER</strong>, a musical album & transmedia project inspired by Henry Darger.
-              <br>Drawings & animations by Gabriel Jacquel. 
+              <br>This project is also an opportunity to highlight the strength of the singularity for which Darger is one of the most powerful symbols. Witnessing this infinite wealth, which is often ignored, to encourage the revelation to the world of this part of genius.
+            </p>
+            <p class="minitext">       
+              Drawings & animations by <strong>Gabriel Jacquel</strong>. 
               Website by <a href="https://neonsmutants.github.io/" target="blank">Néons Mutants</a>.       
               All rights reserved © <span>{{date}}</span>.
             </p>

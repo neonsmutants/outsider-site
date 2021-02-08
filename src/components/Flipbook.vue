@@ -29,7 +29,7 @@ export default {
   data() {
     return {
       fbImages: [],
-      nbFlipImages: 550,
+      nbFlipImages: 250,
       loadbarWidth: 0,
       showPreloader: true
     }
@@ -70,7 +70,11 @@ export default {
 
       }, false)
 
-      img.src = require("@/assets/img/flipbook/flipbook_"+i+".jpg")
+      if(window.innerWidth <= 1024)
+        img.src = require("@/assets/img/flipbook/flipbook-mobile_"+i+".jpg")
+      else
+        img.src = require("@/assets/img/flipbook/flipbook_"+i+".jpg")
+      
       //img.src = require("@/assets/img/flipbook/flipbook_"+(i*2)+".jpg")
     }
 
