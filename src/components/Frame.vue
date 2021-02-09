@@ -32,12 +32,16 @@ export default {
   data() {
     return {
       menuVisible: false,
-      showLogo: false
+      showLogo: true
     }
   },
   created(){
     let that = this
-    window.addEventListener('scroll', toggleLogo)
+
+    // if mobile
+    if(window.innerWidth >= 1024)
+      window.addEventListener('scroll', toggleLogo)
+
     function toggleLogo() {
       if(window.pageYOffset > 1500)
         that.showLogo = true

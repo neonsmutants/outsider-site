@@ -167,10 +167,10 @@ $mask-w: 48px;
     top: 0;
     left: 0;
     z-index: 1000;
-    transition: transform 1000ms ease-in-out;
+    transition: transform 1500ms ease-in-out;
 
     &.inactive{
-        transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -150%, 0);
     }
 
     .heading{
@@ -418,7 +418,7 @@ $menu-h: 120px;
 }
 
 #c-darger{
-    width: calc(100% - #{$mask-w}/2);
+    width: 60%;
     margin: 0 auto;
     display: block;
 }

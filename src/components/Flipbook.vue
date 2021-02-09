@@ -70,6 +70,7 @@ export default {
 
       }, false)
 
+      // if mobile
       if(window.innerWidth <= 1024)
         img.src = require("@/assets/img/flipbook/flipbook-mobile_"+i+".jpg")
       else

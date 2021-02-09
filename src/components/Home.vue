@@ -16,7 +16,7 @@
     
     <div class="cloud left" id="c0">
       <div class="content">
-        <p class="big">A <strong>musical album</strong> and <strong>trans-media project</strong></p>
+        <p class="big">A <strong>musical album</strong> and <strong>transmedia project</strong></p>
         <p class="subtitle">by Philippe Cohen Solal & Mike Lindsay</p>
       </div>    
       <img src="@/assets/img/ui/clouds/c0.svg" class="cb" v-if="!isMobile">
@@ -90,7 +90,7 @@
     <div class="cloud interstitial" id="podcasts">
       <div class="content center-text">
         <iframe src="https://embed.acast.com/outsider-histoire-henry-darger" scrolling="no" frameborder="0" style="border:none;overflow:hidden;"></iframe>
-        <a href="#" target="blank" class="bt-primary">More podcasts</a>
+        <a href="https://subscribe.acast.com/outsider-histoire-henry-darger" target="blank" class="bt-primary">More podcasts</a>
       </div>
       <img src="@/assets/img/ui/clouds/c-podcasts.png" alt="Podcasts" class="cb ci" id="c-podcasts" v-if="!isMobile">
     </div>
@@ -172,9 +172,7 @@
 
     <div class="space"></div>
 
-    <img src="@/assets/img/ui/darger.jpg" alt="Darger" id="c-darger">
-
-    <div class="space"></div>
+    <img src="@/assets/img/ui/darger.png" alt="Darger" id="c-darger">
 
     <div class="cloud left">
       <div class="content">
@@ -322,9 +320,6 @@
           <div class="column2 nomargin">
             <p class="minitext">
               <strong>OUTSIDER</strong>, a musical album & transmedia project inspired by Henry Darger.
-              <br>This project is also an opportunity to highlight the strength of the singularity for which Darger is one of the most powerful symbols. Witnessing this infinite wealth, which is often ignored, to encourage the revelation to the world of this part of genius.
-            </p>
-            <p class="minitext">       
               Drawings & animations by <strong>Gabriel Jacquel</strong>. 
               Website by <a href="https://neonsmutants.github.io/" target="blank">Néons Mutants</a>.       
               All rights reserved © <span>{{date}}</span>.
