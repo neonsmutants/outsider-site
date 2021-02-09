@@ -1,6 +1,6 @@
 <template>
 <div>
-    <img src="@/assets/img/ui/logo.png" alt="Outsider" id="logo">
+    <img src="@/assets/img/ui/logo.png" alt="Outsider" id="logo" v-bind:class="{ visible: showLogo }">
     <a href="#" v-on:click="toggleMenu"><img src="@/assets/img/ui/burger.svg" alt="Open menu" id="burger"></a>  
 
     <div id="menu" v-bind:class="{ visible: menuVisible }">
@@ -31,7 +31,18 @@ export default {
   name: 'Frame',
   data() {
     return {
-      menuVisible: false
+      menuVisible: false,
+      showLogo: false
+    }
+  },
+  created(){
+    let that = this
+    window.addEventListener('scroll', toggleLogo)
+    function toggleLogo() {
+      if(window.pageYOffset > 1500)
+        that.showLogo = true
+      else
+        that.showLogo = false
     }
   },
   methods: {
