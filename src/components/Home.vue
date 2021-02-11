@@ -298,7 +298,18 @@
           </div>
           <div class="column2 nomargin" id="contact">
             <div class="title">Contact us</div>
-            <p>Send an email to <a href="mailto:contact@outsideronline.co">contact@outsideronline.co</a></p>
+            <!-- <p>Send an email to <a href="mailto:contact@outsideronline.co">contact@outsideronline.co</a></p> -->
+
+            <form class="contact-form" @submit.prevent="sendEmail">
+              <label>Name</label>
+              <input type="text" name="user_name">
+              <label>Email</label>
+              <input type="email" name="user_email">
+              <label>Message</label>
+              <textarea name="message"></textarea>
+              <input type="submit" value="Send">
+            </form>
+            
           </div>
         </div>
         <div class="clearfix"></div>
@@ -333,6 +344,8 @@
 </template>
 
 <script>
+import emailjs from 'emailjs-com'
+
 export default {
   name: 'Home',
   data() {
@@ -355,6 +368,16 @@ export default {
       this.isMobile = true
 
     this.date = new Date().getFullYear()
+  },
+  methods: {
+    sendEmail: (e) => {
+      emailjs.sendForm('service_gw9j3rs', 'template_ngoxb8p', e.target, 'user_QNhhPaiTt2jfg3bENI2Xi')
+        .then((result) => {
+            console.log('SUCCESS!', result.status, result.text);
+        }, (error) => {
+            console.log('FAILED...', error)
+        })
+    }
   }
 }
 </script>
