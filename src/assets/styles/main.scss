@@ -495,6 +495,7 @@ hr{
         margin-right: 60px;
         &.nomargin{
             margin-right: 0;
+            width: 50%;
         }
     }
 
@@ -528,18 +529,49 @@ hr{
     clear: both;
 }
 
-input[type=email]{
+label{
+    display: block;
+}
+
+textarea{
+    font-size: 14px;
+    font-family:'Courier Prime', monospace;
+    font-style: italic;
+    padding: 20px;
+    border: 2px solid $dark;
+    width: 100%;
+    background: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+input[type=email], input[type=text]{
     font-size: 14px;
     font-family:'Courier Prime', monospace;
     font-style: italic;
     padding: 0 20px;
     border: 2px solid $dark;
-    width: calc(70%);
+    width: 70%;
     height: 54px;
     background: none;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+
+    &.mb{
+        margin-bottom: 5px;
+    }
+    &.w100{
+        width: 100%;
+    }
+    &.w50{
+        width: calc(50% - 2px);
+        margin-right: 4px;
+        &.nomargin{
+            margin-right: 0;
+        }
+    }
 
     &:focus{
         outline: none;
@@ -549,6 +581,8 @@ input[type=email]{
 ::placeholder {
     color: $dark;
 }
+
+
 button{
     //padding: 15px 20px;
     font-family:'Courier Prime', monospace;

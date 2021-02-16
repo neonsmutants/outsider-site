@@ -301,13 +301,10 @@
             <!-- <p>Send an email to <a href="mailto:contact@outsideronline.co">contact@outsideronline.co</a></p> -->
 
             <form class="contact-form" @submit.prevent="sendEmail">
-              <label>Name</label>
-              <input type="text" name="user_name">
-              <label>Email</label>
-              <input type="email" name="user_email">
-              <label>Message</label>
-              <textarea name="message"></textarea>
-              <input type="submit" value="Send">
+              <input type="text" name="user_name" placeholder="Name" class="mb w50">
+              <input type="email" name="user_email" placeholder="Email" class="mb w50 nomargin">
+              <textarea name="message" placeholder="Message" class="w100"></textarea>
+              <button type="submit">Send</button>
             </form>
             
           </div>
@@ -350,7 +347,7 @@ export default {
   name: 'Home',
   data() {
     return {
-      showNewsletter: false,
+      showNewsletter: true,
       showScroll: true,
       isMobile: false,
       date: null
