@@ -290,7 +290,7 @@
       <div class="content">
         <div class="row">
           <div class="column2">
-            <a href="/newsletter.html" class="bt-primary">Subscribe to our newsletter !</a>
+            <a href="/newsletter.html" target="blank" class="bt-primary">Subscribe to our newsletter !</a>
           </div>
           <div class="column2 nomargin" id="contact">
             <div class="title">Contact us</div>
