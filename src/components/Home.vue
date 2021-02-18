@@ -294,14 +294,16 @@
           </div>
           <div class="column2 nomargin" id="contact">
             <div class="title">Contact us</div>
-            <!-- <p>Send an email to <a href="mailto:contact@outsideronline.co">contact@outsideronline.co</a></p> -->
+            <p>Send an email to <a href="mailto:contact@outsideronline.co">contact@outsideronline.co</a></p>
 
-            <form class="contact-form" @submit.prevent="sendEmail">
+            <!-- <form class="contact-form" @submit.prevent="sendEmail">
               <input type="text" name="user_name" placeholder="Name" class="mb w50">
               <input type="email" name="user_email" placeholder="Email" class="mb w50 nomargin">
               <textarea name="message" placeholder="Message" class="w100"></textarea>
               <button type="submit">Send</button>
-            </form>
+            </form> -->
+
+            {{emailResponse}}
             
           </div>
         </div>
@@ -346,7 +348,8 @@ export default {
       showNewsletter: true,
       showScroll: true,
       isMobile: false,
-      date: null
+      date: null,
+      emailResponse: ''
     }
   },
   created() {
@@ -363,12 +366,15 @@ export default {
     this.date = new Date().getFullYear()
   },
   methods: {
-    sendEmail: (e) => {
+    sendEmail(e) {
+      let that = this
       emailjs.sendForm('service_gw9j3rs', 'template_ngoxb8p', e.target, 'user_QNhhPaiTt2jfg3bENI2Xi')
         .then((result) => {
-            console.log('SUCCESS!', result.status, result.text);
+            console.log('SUCCESS!', result.status, result.text)
+            that.emailResponse = 'Your message has been sent !'
         }, (error) => {
             console.log('FAILED...', error)
+            that.emailResponse = "Oops ! An error occured :/"
         })
     }
   }
