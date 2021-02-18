@@ -290,11 +290,7 @@
       <div class="content">
         <div class="row">
           <div class="column2">
-            <form v-if="showNewsletter">
-              <label for="newsletter" class="title">Subscribe to our newsletter !</label>
-              <input type="email" name="newsletter" id="input-newsletter" placeholder="Email">
-              <button type="submit">Send</button>
-            </form>
+            <a href="/newsletter.html" class="bt-primary">Subscribe to our newsletter !</a>
           </div>
           <div class="column2 nomargin" id="contact">
             <div class="title">Contact us</div>
