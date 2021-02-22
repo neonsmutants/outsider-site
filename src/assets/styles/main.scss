@@ -293,7 +293,6 @@ $menu-h: 120px;
     &.right{
         float: right;
         margin-right: 89px;
-        text-align: right;
     }
 
     p{
@@ -344,7 +343,7 @@ $menu-h: 120px;
         margin-right: 24%;
         .cb{
             top: -65px;
-            left: -25px;
+            left: -110px;
         }  
     }
     &#c2{
@@ -362,33 +361,98 @@ $menu-h: 120px;
             left: -100px;
         }        
     }
-    #c4{
-        top: -100px;
+    &#c4{
+        margin-right: 32%;
+        .cb{
+            top: -130px;
+            left: -100px;
+        }
     }
-    &.right #c5{
-        top: -170px;
+    &#c5{
+        margin-right: 23%;
+        .cb{
+            top: -170px;
+            left: -150px;
+        }
     }
-    #c6{
-        top: -70px;
+    &#c6{
+        margin-left: 28%;
+        .cb{
+            top: -70px;
+            left: -120px;
+        }
     }
-    #c7{
-        top: -70px;
+    &#c7{
+        margin-right: 20%;
+        .cb{
+            top: -60px;
+        }
     }
-    #c8{
-        top: -120px;
+    &#c8{
+        margin-left: 22%;
+        .cb{
+            top: -220px;
+            left: -140px;
+            width: 765px;
+        }
     }
-    #c9{
-        top: -50px;
+    &#c9{
+        margin-right: 28%;
+        .cb{
+            top: 40px;
+            left: -100px;
+        }
     }
-    #c10{
-        top: 120px;
+    &#c10{
+        margin-left: 20%;
+        .cb{
+            top: 180px;
+            left: -100px;
+        }
     }
-    #c11{
-        top: 120px;
+    &#c11{
+        margin-right: 14%;
+        .cb{
+            top: 80px;
+            left: -70px;
+        }
     }
-    #c12{
-        top: 40px;
+    &#c12{
+        margin-left: 34%;
+        .cb{
+            top: 0;
+            left: -100px;
+        }
     }
+    &#c13{
+        margin-left: 28%;
+        .cb{
+            top: 30px;
+            left: -180px;
+        }
+    }
+    &#c14{
+        margin-right: 28%;
+        .cb{
+            top: 100px;
+            left: -150px;
+        }
+    }
+    &#c15{
+        margin-left: 30%;
+        .cb{
+            top: -80px;
+            left: -100px;
+        }
+    }
+    &#c16{
+        margin-left: 21%;
+        .cb{
+            top: -80px;
+            left: -80px;
+        }
+    }
+
     #c-shortfilm{
         top: -150px;
     }   

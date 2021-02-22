@@ -75,13 +75,20 @@
 
     <div class="space"></div>
 
-    <div class="cloud left">
+    <div class="cloud left" id="c15">
       <div class="content">
         <p class="quote">« Music, visual arts and storytelling »</p>
-        <br>
+      </div>
+      <img src="@/assets/img/ui/clouds/c15.svg" class="cb" v-if="!isMobile">
+    </div>
+
+    <div class="space"></div>
+
+    <div class="cloud right" id="c4">
+      <div class="content">
         <p>« I dream that this transmedia project <strong>brings together past, present and future</strong>. I would like that through this audiovisual and interactive creation inspired by the work and life of the most famous outsider artist, the public questions <strong>the role and relationship of celebrity to the necessity of art</strong>. » <br><br> - Philippe Cohen Solal</p>
       </div>
-      <img src="@/assets/img/ui/clouds/c4.svg" class="cb" id="c4" v-if="!isMobile">
+      <img src="@/assets/img/ui/clouds/c4.svg" class="cb" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -97,10 +104,17 @@
 
     <div class="space"></div>
 
-    <div class="cloud right">
+    <div class="cloud left" id="c16">
       <div class="content">
-        <p class="quote">« These are not your average love songs. »</p>
-        <br>
+        <p class="quote">« These are not your average love songs »</p>
+      </div>
+      <img src="@/assets/img/ui/clouds/c16.svg" class="cb" v-if="!isMobile">
+    </div>
+
+    <div class="space"></div>
+
+    <div class="cloud right" id="c5">
+      <div class="content">
         <p>
           In North Side Chicago, in the middle of the 20th century, 
           there was a reclusive hospital janitor who lived in one room – 
@@ -121,7 +135,7 @@
           love songs.
         </p>       
       </div>
-      <img src="@/assets/img/ui/clouds/c5.svg" class="cb" id="c5" v-if="!isMobile">
+      <img src="@/assets/img/ui/clouds/c5.svg" class="cb" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -137,12 +151,12 @@
     
     <div class="space"></div>
 
-    <div class="cloud left">
+    <div class="cloud left" id="c6">
       <div class="content">
-        <p class="quote">« It sounds like a very twisted long-forgotten musical, with an evil twist and a very innocent blanket wrapped around it. It’s classic, it’s beautiful and it’s experimental. »</p>
+        <p class="quote">« It sounds like a very twisted long-forgotten musical, with an evil twist and a very innocent blanket wrapped around it. It’s classic, it’s beautiful and it’s experimental »</p>
         <p class="signature">- Mike Lindsay</p>
       </div>
-      <img src="@/assets/img/ui/clouds/c6.svg" class="cb" id="c6" v-if="!isMobile">
+      <img src="@/assets/img/ui/clouds/c6.svg" class="cb" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -162,19 +176,19 @@
 
     <div class="space"></div>
 
-    <div class="cloud right">
+    <div class="cloud right" id="c7">
       <div class="content">
         <p class="quote">« I hated to see the day come when I will be grown up. I never wanted to. I wished to be young always »</p>
         <p class="signature">- Henry Darger</p>
       </div>
-      <img src="@/assets/img/ui/clouds/c7.svg" class="cb" id="c7" v-if="!isMobile">
+      <img src="@/assets/img/ui/clouds/c7.svg" class="cb" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
 
-    <img src="@/assets/img/ui/darger.png" alt="Darger" id="c-darger">
+    <!-- <img src="@/assets/img/ui/darger.png" alt="Darger" id="c-darger"> -->
 
-    <div class="cloud left">
+    <div class="cloud left" id="c8">
       <div class="content">
         <p>
           <strong>HENRY DARGER (1892-1973) was a reclusive hospital janitor and dishwasher who led a secret life as a prolific visual artist and epic novelist</strong>. His vast collection of creative work was discovered in 1972 when his two-room apartment in Chicago was cleared out shortly before he died. Over some 350 watercolor, pencil, collage and carbon-traced drawings, most of them stitched into three enormous "albums," as well as seven typewritten hand-bound books, thousands of bundled sheets of typewritten text, and numerous journals, ledgers and scrapbooks were discovered.
@@ -185,7 +199,7 @@
         <br>
         <p><a href="http://www.officialhenrydarger.com/" target="blank" class="bt-primary">Read full bio</a></p>
       </div>
-      <img src="@/assets/img/ui/clouds/c8.svg" class="cb" id="c8" v-if="!isMobile">
+      <img src="@/assets/img/ui/clouds/c8.png" class="cb" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -206,7 +220,7 @@
 
     <div class="space"></div>
 
-    <div class="cloud right">
+    <div class="cloud right" id="c9">
       <div class="content">
         <img src="@/assets/img/ui/avatar0.png" alt="Philippe" class="avatar">
         <div class="name">PHILIPPE COHEN SOLAL</div>
@@ -215,12 +229,12 @@
         <br>
         <a href="https://yabasta-records.com/en/philippe-cohen-solal" target="blank" class="persolink">> More infos</a>
       </div>
-      <img src="@/assets/img/ui/clouds/c9.svg" class="cb" id="c9" v-if="!isMobile">
+      <img src="@/assets/img/ui/clouds/c9.svg" class="cb" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
 
-    <div class="cloud left">
+    <div class="cloud left" id="c10">
       <div class="content">
         <img src="@/assets/img/ui/avatar1.png" alt="Mike" class="avatar">
         <div class="name">MIKE LINDSAY</div>
@@ -229,12 +243,12 @@
         <br>
         <a href="http://www.mike-lindsay.com" target="blank" class="persolink">> More infos</a>
       </div>
-      <img src="@/assets/img/ui/clouds/c10.svg" class="cb" id="c10" v-if="!isMobile">
+      <img src="@/assets/img/ui/clouds/c10.svg" class="cb" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
 
-    <div class="cloud right">
+    <div class="cloud right" id="c11">
       <div class="content">
         <img src="@/assets/img/ui/avatar2.png" alt="Adam" class="avatar">
         <div class="name">ADAM GLOVER</div>
@@ -243,12 +257,12 @@
         <br>
         <!-- <a href="#" target="blank" class="persolink">> More infos</a> -->
       </div>
-      <img src="@/assets/img/ui/clouds/c11.svg" class="cb" id="c11" v-if="!isMobile">
+      <img src="@/assets/img/ui/clouds/c11.svg" class="cb" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
 
-    <div class="cloud left">
+    <div class="cloud left" id="c12">
       <div class="content">
         <img src="@/assets/img/ui/avatar3.png" alt="Hannah" class="avatar">
         <div class="name">HANNAH PEEL</div>
@@ -257,7 +271,7 @@
         <br>
         <a href="http://www.hannahpeel.com" target="blank" class="persolink">> More infos</a>
       </div>
-      <img src="@/assets/img/ui/clouds/c12.svg" class="cb" id="c12" v-if="!isMobile">
+      <img src="@/assets/img/ui/clouds/c12.svg" class="cb" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
@@ -266,7 +280,7 @@
 
     <div class="space"></div>
 
-    <div class="cloud right">
+    <div class="cloud right" id="c14">
       <div class="content">
         <img src="@/assets/img/ui/avatar5.png" alt="Pascal" class="avatar">
         <div class="name">PASCAL GARY (AKA PHORMAZERO)</div>
@@ -278,12 +292,12 @@
         <br>
         <a href="http://www.phormazero.com/" target="blank" class="persolink">> More infos</a>
       </div>
-      <img src="@/assets/img/ui/clouds/c14.svg" class="cb" id="c11" v-if="!isMobile">
+      <img src="@/assets/img/ui/clouds/c14.svg" class="cb" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
 
-    <div class="cloud left">
+    <div class="cloud left" id="c13">
       <div class="content">
         <img src="@/assets/img/ui/avatar4.png" alt="Hannah" class="avatar">
         <div class="name">GABRIEL JACQUEL</div>
@@ -296,7 +310,7 @@
         <br>
         <a href="https://rainboxprod.coop/en/" target="blank" class="persolink">> More infos</a>
       </div>
-      <img src="@/assets/img/ui/clouds/c13.svg" class="cb" id="c12" v-if="!isMobile">
+      <img src="@/assets/img/ui/clouds/c13.svg" class="cb" v-if="!isMobile">
     </div>
 
     <div class="space"></div>
