@@ -844,10 +844,18 @@ button{
             color: $dark;
         }
         a.logo{
-            float: none;
+            float: left;
             margin-right: 15px;
             margin-bottom: 20px;
             display: block;
+        }
+        .bt-primary{
+            color: $dark;
+            border-color: $dark;
+            margin-bottom: 20px;
+        }
+        .column2.nomargin{
+            width: 100%;
         }
     }
 

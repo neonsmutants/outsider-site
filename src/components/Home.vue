@@ -69,7 +69,7 @@
       <img src="@/assets/img/ui/clouds/c-videos-mobile.png" alt="Videos" class="cb ci" id="c-clips" v-if="isMobile">
       <img src="@/assets/img/ui/clouds/c-videos.png" alt="Videos" class="cb ci" id="c-clips" v-if="!isMobile">
       <div class="content center-text">
-        <a href="https://www.youtube.com/watch?v=p3FKn5eVCwg&list=PL6c_5GyF9mZQXOmzXyQ5WsqcjZ3GnWYaL" target="blank" class="bt-primary">Watch videos</a>
+        <a href="https://www.youtube.com/watch?v=G8h12wI1tDc&list=PL6c_5GyF9mZQXOmzXyQ5WsqcjZ3GnWYaL" target="blank" class="bt-primary">Watch videos</a>
       </div>     
     </div>
 
@@ -90,7 +90,7 @@
     <div class="cloud interstitial" id="podcasts">
       <div class="content center-text">
         <iframe src="https://embed.acast.com/outsider-histoire-henry-darger" scrolling="no" frameborder="0" style="border:none;overflow:hidden;"></iframe>
-        <a href="https://subscribe.acast.com/outsider-histoire-henry-darger" target="blank" class="bt-primary">More podcasts</a>
+        <a href="https://smarturl.it/outsider.podcast" target="blank" class="bt-primary">More podcasts</a>
       </div>
       <img src="@/assets/img/ui/clouds/c-podcasts.png" alt="Podcasts" class="cb ci" id="c-podcasts" v-if="!isMobile">
     </div>
@@ -262,6 +262,45 @@
 
     <div class="space"></div>
 
+    <h2 class="bigtitle">THE ART TEAM</h2>
+
+    <div class="space"></div>
+
+    <div class="cloud right">
+      <div class="content">
+        <img src="@/assets/img/ui/avatar5.png" alt="Pascal" class="avatar">
+        <div class="name">PASCAL GARY (AKA PHORMAZERO)</div>
+        <div class="role">Visual artist, Artistic director</div>
+        <p>
+          <strong>In 2000, Pascal Gary creates phormazero</strong>, a creative studio with diverse
+          outpouring including live visuals, installations, music-videos and unique visual concepts for international festivals, contemporary art festivals, luxury industries, designers, and broadcast shows.
+        </p>
+        <br>
+        <a href="http://www.phormazero.com/" target="blank" class="persolink">> More infos</a>
+      </div>
+      <img src="@/assets/img/ui/clouds/c14.svg" class="cb" id="c11" v-if="!isMobile">
+    </div>
+
+    <div class="space"></div>
+
+    <div class="cloud left">
+      <div class="content">
+        <img src="@/assets/img/ui/avatar4.png" alt="Hannah" class="avatar">
+        <div class="name">GABRIEL JACQUEL</div>
+        <div class="role">Director & animator</div>
+        <p>
+          <strong>Animator on many films</strong> : The Wallet, Signs of life, Edmond was a donkey, The Head vanished, The Ogre, or Roughhouse…
+          He directed three short films RectoVerso, Beuuââârk !!!, Ludwig Demon's. Co-directed Breakout and La Ferté - Un Cercueil de Béton.
+          <strong>Co-founded Studio train train</strong>, he joined forces with the production company <strong>Rainbox</strong> for his new project Pylône.
+        </p>
+        <br>
+        <a href="https://rainboxprod.coop/en/" target="blank" class="persolink">> More infos</a>
+      </div>
+      <img src="@/assets/img/ui/clouds/c13.svg" class="cb" id="c12" v-if="!isMobile">
+    </div>
+
+    <div class="space"></div>
+
     <!-- making-of -->
     <div class="cloud interstitial" id="making-of">
       <img src="@/assets/img/ui/clouds/c-makingof-mobile.png" alt="Making Of" class="cb ci" id="c-makingof" v-if="isMobile">
@@ -302,8 +341,7 @@
               <textarea name="message" placeholder="Message" class="w100"></textarea>
               <button type="submit">Send</button>
             </form> -->
-
-            {{emailResponse}}
+            <!-- {{emailResponse}} -->
             
           </div>
         </div>
@@ -323,12 +361,16 @@
         </div>
         <div class="clearfix"></div>
         <div class="row">
-          <div class="column2 nomargin">
+          <div class="column2">
             <p class="minitext">
               <strong>OUTSIDER</strong>, a musical album & transmedia project inspired by Henry Darger.
-              Drawings & animations by <strong>Gabriel Jacquel</strong>. 
               Website by <a href="https://neonsmutants.github.io/" target="blank">Néons Mutants</a>.       
               All rights reserved © <span>{{date}}</span>.
+            </p>
+          </div>
+          <div class="column2 nomargin">
+            <p class="minitext">
+              This project is also an opportunity to highlight the strength of the singularity for which Darger is one of the most powerful symbols. Witnessing this infinite wealth, which is often ignored, to encourage the revelation to the world of this part of genius.
             </p>
           </div>
         </div>
