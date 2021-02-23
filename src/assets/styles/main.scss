@@ -295,6 +295,20 @@ $menu-h: 120px;
         margin-right: 89px;
     }
 
+    &.twitter{
+        width: 300px;
+        margin: auto;
+
+        .bt-primary{
+            margin-top: 20px;
+        }
+
+        .cb{
+            top: -120px;
+            left: -170px;
+        }
+    }
+
     p{
         width: 320px;
         line-height: 1.2;

@@ -161,6 +161,17 @@
 
     <div class="space"></div>
 
+    <!-- twitter -->
+    <div class="cloud twitter">
+      <div class="content center-text">
+        <a class="twitter-timeline" data-width="300" data-height="320" href="https://twitter.com/toniodebanderas/lists/outsider-58706?ref_src=twsrc%5Etfw">A Twitter List by toniodebanderas</a>
+        <a href="https://www.songkick.com/artists/3653951-philippe-cohen-solal" target="blank" class="bt-primary">More tweets</a>
+      </div>
+      <img src="@/assets/img/ui/clouds/c14.svg" class="cb" v-if="!isMobile">
+    </div>
+
+    <div class="space"></div>
+
     <!-- press -->
     <div class="cloud interstitial" id="press">
       <img src="@/assets/img/ui/clouds/c-press-mobile.png" alt="Press" class="cb ci" id="c-press" v-if="isMobile">
@@ -407,6 +418,11 @@ export default {
       date: null,
       emailResponse: ''
     }
+  },
+  mounted() {
+    let twitterScript = document.createElement('script')
+    twitterScript.setAttribute('src', 'https://platform.twitter.com/widgets.js')
+    document.head.appendChild(twitterScript)
   },
   created() {
     let that = this
