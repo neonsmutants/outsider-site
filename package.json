@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "sitemap": "vue-cli-service sitemap"
   },
   "dependencies": {
     "animejs": "^3.2.1",
@@ -17,7 +18,7 @@
     "sass": "^1.30.0",
     "sass-loader": "^10.1.0",
     "vue": "^2.6.11",
-    "vue-cli-plugin-sitemap": "^2.3.0"
+    "vue-cli-plugin-sitemap": "~2.3.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

@@ -8191,7 +8191,7 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
 
-vue-cli-plugin-sitemap@^2.3.0:
+vue-cli-plugin-sitemap@~2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/vue-cli-plugin-sitemap/-/vue-cli-plugin-sitemap-2.3.0.tgz#92539c1f1992e6ee61a42cb1f4be90fd8eef137e"
   integrity sha512-oZRhYZUdze/wmIaDFkolHCu8MOH/M4B8WW5nx7MhpAJxguia9BYIFnv86d9ZNztCz2Oeat2JC7KLFgfRxSrUtw==
