@@ -276,7 +276,7 @@
 
     <div class="space"></div>
 
-    <h2 class="bigtitle">THE ART TEAM</h2>
+    <h2 class="bigtitle">THE ART</h2>
 
     <div class="space"></div>
 
