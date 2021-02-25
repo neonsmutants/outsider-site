@@ -174,8 +174,8 @@
     <!-- twitter -->
     <div class="cloud twitter">
       <div class="content center-text">
-        <a class="twitter-timeline" href="https://twitter.com/outsider_online?ref_src=twsrc%5Etfw">Tweets by outsider_online</a> 
-        <a href="https://twitter.com/outsider_online" target="blank" class="bt-primary">Follow us</a>
+        <a class="twitter-timeline" data-width="300" data-height="320" href="https://twitter.com/pcs_off?ref_src=twsrc%5Etfw">Tweets by pcs_off</a> 
+        <a href="https://twitter.com/outsider_online" target="blank" class="bt-primary">Follow Philippe Cohen Solal</a>
       </div>
       <img src="@/assets/img/ui/clouds/c14.svg" class="cb" v-if="!isMobile">
     </div>

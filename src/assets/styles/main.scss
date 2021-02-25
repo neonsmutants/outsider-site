@@ -349,7 +349,7 @@ $menu-h: 120px;
         }
 
         .cb{
-            top: -120px;
+            top: -105px;
             left: -170px;
         }
     }
@@ -772,6 +772,10 @@ button{
 //-------
 @media screen and (max-width: 414px) {
 
+    #overlay{
+        display: none;
+    }
+
     body{
         color: $cream;
     }
@@ -794,7 +798,7 @@ button{
         height: 100%;
         z-index: -1;
         background-color: $dark;
-        opacity: .4;
+        opacity: .3;
     }
 
     $mobile-margin: 18px;
@@ -908,13 +912,23 @@ button{
         }
     }
 
-    .cloud#c0 {
-        margin-left: 0;
-    }
-    .cloud#c1 {
-        margin-left: 0;
-    }
-    .cloud#c2 {
+    .cloud#c0, 
+    .cloud#c1, 
+    .cloud#c2,
+    .cloud#c3,
+    .cloud#c4,
+    .cloud#c5,
+    .cloud#c6,
+    .cloud#c7,
+    .cloud#c8,
+    .cloud#c9,
+    .cloud#c10,
+    .cloud#c11,
+    .cloud#c12,
+    .cloud#c13,
+    .cloud#c14,
+    .cloud#c15,
+    .cloud#c16{
         margin-left: 0;
     }
 
