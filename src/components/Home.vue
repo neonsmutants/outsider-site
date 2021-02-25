@@ -1,5 +1,15 @@
 <template>
 <div>
+
+    <!-- overlay -->
+    <div id="overlay" v-bind:class="{ visible: showOverlay }">
+      <div class="content">
+        <a class="bt-close" v-on:click="showOverlay = false"><img src="@/assets/img/ui/close-cream.svg" alt="Close"></a>
+        <a href="/newsletter.html" target="blank" class="bt-primary">Subscribe to our newsletter !</a>
+      </div>
+      <img src="@/assets/img/ui/overlay.svg" alt="Overlay" class="bg">
+    </div>
+
     <div id="mobile-overlay" v-if="isMobile"></div>
 
     <img src="@/assets/img/ui/scroll.svg" alt="Scroll down" id="scrolldown" v-bind:class="{ hidden: !showScroll }">
@@ -164,8 +174,8 @@
     <!-- twitter -->
     <div class="cloud twitter">
       <div class="content center-text">
-        <a class="twitter-timeline" data-width="300" data-height="320" href="https://twitter.com/toniodebanderas/lists/outsider-58706?ref_src=twsrc%5Etfw">A Twitter List by toniodebanderas</a>
-        <a href="https://www.songkick.com/artists/3653951-philippe-cohen-solal" target="blank" class="bt-primary">More tweets</a>
+        <a class="twitter-timeline" href="https://twitter.com/outsider_online?ref_src=twsrc%5Etfw">Tweets by outsider_online</a> 
+        <a href="https://twitter.com/outsider_online" target="blank" class="bt-primary">Follow us</a>
       </div>
       <img src="@/assets/img/ui/clouds/c14.svg" class="cb" v-if="!isMobile">
     </div>
@@ -416,7 +426,8 @@ export default {
       showScroll: true,
       isMobile: false,
       date: null,
-      emailResponse: ''
+      emailResponse: '',
+      showOverlay: false
     }
   },
   mounted() {
@@ -430,6 +441,14 @@ export default {
     function hideScrollHandler() {
       that.showScroll = false
       window.removeEventListener('scroll', hideScrollHandler)
+    }
+
+    window.addEventListener('scroll', showOverlay)
+    function showOverlay() {    
+      if(window.pageYOffset > 8000){
+        that.showOverlay = true
+        window.removeEventListener('scroll', showOverlay)
+      }
     }
 
     if(window.innerWidth <= 414)

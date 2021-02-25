@@ -77,6 +77,51 @@ ul{
     z-index: 13;
 }
 
+#overlay{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    transform: translate3d(0, 200px, 0);
+    transition: transform 250ms ease-in-out;
+
+    &.visible{
+        transform: translate3d(0, 0, 0);
+    }
+
+    .bt-close{
+        position: absolute;
+        top: -54px;
+        right: 0;
+        z-index: 501;
+        cursor: pointer;
+    }
+
+    .bt-primary{
+        border-color: $cream;
+        color: $cream;
+
+        &:hover{
+            background-color: $cream;
+            color: #793D37;
+        }
+    }
+
+    .content{
+        position: absolute;
+        z-index: 500;
+        bottom: 32px;
+        left: 32px;
+        width: 300px;
+    }
+
+    .bg{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
 .bt-primary{
     display: inline-block;
     border: 4px solid $dark;
@@ -215,7 +260,7 @@ $menu-h: 120px;
     font-family: 'DargerScript';
     transform: translate3d(0, 100%, 0);
     transition: 500ms ease-in-out;
-    z-index: 2000;
+    z-index: 1500;
     
 
     &.visible{
