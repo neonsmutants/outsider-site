@@ -19,6 +19,7 @@
     "sass-loader": "^10.1.0",
     "vue": "^2.6.11",
     "vue-cli-plugin-sitemap": "~2.3.0",
+    "vue-router": "^3.5.1",
     "vue-tweet-embed": "^2.4.0"
   },
   "devDependencies": {
