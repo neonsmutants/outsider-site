@@ -5,25 +5,169 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Outsider - Museums</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: 'DargerScript';
+            src: url('/museums/font/dargerbrutscript-webfont.woff2') format('woff2'),
+                url('/museums/font/dargerbrutscript-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         html, body{
             padding: 0;
             margin: 0;
-            width: 100%;
-            height: 100%;
+            font-family: 'Courier Prime', monospace;
+            cursor: grab;
         }
 
         #map{
-            width: 150%;
+            /* width: 4500px;
+            height: 1080px; */
+            width: 100%;
+        }
+
+        #map-container{
+            width: 4500px;
+            height: 1080px;
+            position: relative;
+        }
+
+        .poi-container{
+            position: absolute;
+            z-index: 2;
+        }
+
+        .poi{
+            
+            width: 44px;
+            height: 40px;
+            display: block;
+        }
+
+        .poi img{
+            width: 100%;
+        }
+
+        .poi-title{
+            margin: 0;
+            font-family: 'DargerScript', script;
+        }
+
+        .popup{
+            position: relative;
+            width: 280px;
+            background-color: #d5aa8d;
+            color: #1C1C1C;
+            z-index: 3;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 2px 10px 20px 0px rgba(0,0,0,0.3);
+            -webkit-box-shadow: 2px 10px 20px 0px rgba(0,0,0,0.3);
+            -moz-box-shadow: 2px 10px 20px 0px rgba(0,0,0,0.3);
+            display: none;
+        }
+
+        .popup .close{
+            float: right;
+            width: 20px;
+        }
+        .popup .close img{
+            width: 100%;
+        }
+
+        .popup .link{
+            background-color: #1C1C1C;
+            color: #d5aa8d;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 99px;
+            text-decoration: none;
+            width: calc(100% - 40px);
+            text-align: center;
+            margin-top: 20px;
+            font-family: 'Courier Prime', monospace;
+        }
+
+        .frame{
+            position: fixed;
+            left: 0;
+            width: 100%;
+            z-index: 99;
+            pointer-events: none;
+        }
+        #frame-top{
+            top: 0;
+        }
+        #frame-bottom{
+            bottom: 0;
         }
     </style>
 </head>
-<body>
+<body class="dragscroll">
 
 
     <!-- frame -->
-    <!-- poi -->
-    <img src="/museums/map.jpg" alt="map" id="map">
+    <img src="/museums/frame-top-desktop.png" alt="frame" id="frame-top" class="frame">
+    <img src="/museums/frame-bottom-desktop.png" alt="frame" id="frame-bottom" class="frame">
+
     
+    <div id="map-container">
+        <img src="/museums/map.jpg" alt="map" id="map">
+
+        <div class="poi-container" style="top: 20%; left: 24%;">     
+            <a href="#" class="poi" id="poi0"><img src="/museums/poi.png"></a>
+            <div class="poi-title">MOMA</div>
+            <div class="popup" id="popup0">
+                <a href="#" class="close"><img src="/museums/close.svg"></a>
+                <div class="title">MOMA (Museum of Modern Art), New York, New York</div>
+                <a href="https://www.moma.org/artists/28600#works" target="blank" class="link">View collection</a>
+            </div>
+        </div>
+
+
+    </div>
+    
+    
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+    <script src="/museums/dragscroll.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $('.poi').mouseover(function(){
+                $(this).children('img').attr('src', '/museums/poi-hover.png');
+            });
+            $('.poi').mouseout(function(){
+                $(this).children('img').attr('src', '/museums/poi.png');
+            });
+            $('.poi').click(function(e){
+                e.preventDefault();
+                let id = $(this).attr('id').charAt(3);
+                $('.popup').hide();
+                $('#popup'+id).show();
+            });
+
+            $('.close').click(function(e){
+                e.preventDefault();
+                $(this).parent().hide();
+            });
+
+            $('body').mousedown(function(){
+                $(this).css('cursor', 'grabbing');
+            });
+            $('body').mouseup(function(){
+                $(this).css('cursor', 'grab');
+            });
+
+
+        });
+
+    </script>
 </body>
 </html>
