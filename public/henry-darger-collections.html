@@ -37,31 +37,36 @@
 
         .poi-container{
             position: absolute;
-            z-index: 2;
         }
 
         .poi{
-            
             width: 44px;
             height: 40px;
             display: block;
+            float: left;
         }
 
         .poi img{
-            width: 100%;
+            width: 100%;   
         }
 
         .poi-title{
             margin: 0;
             font-family: 'DargerScript', script;
+            float: right;          
+        }
+
+        .poi-title strong{
+            font-size: 16px;
+            font-style: italic;
         }
 
         .popup{
-            position: relative;
+            position: absolute;
             width: 280px;
-            background-color: #d5aa8d;
-            color: #1C1C1C;
-            z-index: 3;
+            background-color: #f00000;
+            color: #ffe100;
+            z-index: 10;
             padding: 20px;
             margin: 20px;
             box-shadow: 2px 10px 20px 0px rgba(0,0,0,0.3);
@@ -79,8 +84,8 @@
         }
 
         .popup .link{
-            background-color: #1C1C1C;
-            color: #d5aa8d;
+            background-color: #ffe100;
+            color: #f00000;
             display: inline-block;
             padding: 20px;
             border-radius: 99px;
@@ -117,9 +122,9 @@
     <div id="map-container">
         <img src="/museums/map.jpg" alt="map" id="map">
 
-        <div class="poi-container" style="top: 20%; left: 24%;">     
+        <div class="poi-container" style="top: 48%; left: 44%;">     
             <a href="#" class="poi" id="poi0"><img src="/museums/poi.png"></a>
-            <div class="poi-title">MOMA</div>
+            <!-- <div class="poi-title">MOMA</div> -->
             <div class="popup" id="popup0">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">Museum of Modern Art, New York</div>
@@ -127,9 +132,9 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 20%; left: 24%;">     
+        <div class="poi-container" style="top: 46%; left: 43.5%;">     
             <a href="#" class="poi" id="poi1"><img src="/museums/poi.png"></a>
-            <div class="poi-title">Folk Art</div>
+            <!-- <div class="poi-title">FOLK ART</div> -->
             <div class="popup" id="popup1">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">American Folk Art Museum, New York</div>
@@ -137,9 +142,9 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 20%; left: 24%;">     
+        <div class="poi-container" style="top: 45.5%; left: 44.2%;">     
             <a href="#" class="poi" id="poi2"><img src="/museums/poi.png"></a>
-            <div class="poi-title">Whitney</div>
+            <!-- <div class="poi-title">WHITNEY</div> -->
             <div class="popup" id="popup2">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">Whitney Museum of American Art, New York</div>
@@ -147,9 +152,9 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 20%; left: 24%;">     
+        <div class="poi-container" style="top: 52%; left: 44%;">     
             <a href="#" class="poi" id="poi3"><img src="/museums/poi.png"></a>
-            <div class="poi-title">Smithsonian</div>
+            <div class="poi-title">SMITHSONIAN</div>
             <div class="popup" id="popup3">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">Smithsonian American Art Museum, Washington, D.C.</div>
@@ -157,9 +162,9 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 20%; left: 24%;">     
+        <div class="poi-container" style="top: 38%; left: 34%;">     
             <a href="#" class="poi" id="poi4"><img src="/museums/poi.png"></a>
-            <div class="poi-title">Art Institute</div>
+            <!-- <div class="poi-title">ART INSTITUTE</div> -->
             <div class="popup" id="popup4">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">Art Institute Of Chicago, Chicago, Illinois</div>
@@ -167,9 +172,9 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 20%; left: 24%;">     
+        <div class="poi-container" style="top: 38.5%; left: 34.6%;">     
             <a href="#" class="poi" id="poi5"><img src="/museums/poi.png"></a>
-            <div class="poi-title">MCA</div>
+            <!-- <div class="poi-title">MCA</div> -->
             <div class="popup" id="popup5">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">Museum of Contemporary Art, Chicago, Illinois</div>
@@ -178,9 +183,9 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 20%; left: 24%;">     
+        <div class="poi-container" style="top: 40%; left: 33.7%;">     
             <a href="#" class="poi" id="poi6"><img src="/museums/poi.png"></a>
-            <div class="poi-title">MIntuit</div>
+            <!-- <div class="poi-title">INTUIT</div> -->
             <div class="popup" id="popup6">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">The Center for Intuitive and Outsider Art, Chicago, Illinois</div>
@@ -188,9 +193,9 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 20%; left: 24%;">     
+        <div class="poi-container" style="top: 40.5%; left: 34.3%;">     
             <a href="#" class="poi" id="poi7"><img src="/museums/poi.png"></a>
-            <div class="poi-title">Smart</div>
+            <!-- <div class="poi-title">SMART</div> -->
             <div class="popup" id="popup7">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">Smart Museum of Art, Chicago, Illinois</div>
@@ -198,7 +203,7 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 20%; left: 24%;">     
+        <div class="poi-container" style="top: 31%; left: 34.6%;">     
             <a href="#" class="poi" id="poi8"><img src="/museums/poi.png"></a>
             <div class="poi-title">MAM</div>
             <div class="popup" id="popup8">
@@ -208,7 +213,7 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 20%; left: 24%;">     
+        <div class="poi-container" style="top: 24%; left: 31%;">     
             <a href="#" class="poi" id="poi9"><img src="/museums/poi.png"></a>
             <div class="poi-title">WAC</div>
             <div class="popup" id="popup9">
@@ -218,9 +223,9 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 20%; left: 24%;">     
+        <div class="poi-container" style="top: 60%; left: 40%;">     
             <a href="#" class="poi" id="poi10"><img src="/museums/poi.png"></a>
-            <div class="poi-title">High</div>
+            <div class="poi-title">HIGH MUSEUM OF ART</div>
             <div class="popup" id="popup10">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">High Museum of Art, Atlanta, Georgia</div>
@@ -252,7 +257,7 @@
 
         <div class="poi-container" style="top: 20%; left: 24%;">     
             <a href="#" class="poi" id="poi13"><img src="/museums/poi.png"></a>
-            <div class="poi-title">CAB</div>
+            <div class="poi-title">COLLECTION DE L'ART BRUT</div>
             <div class="popup" id="popup13">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">Collection de l'Art Brut, Lausanne, Switzerland</div>
@@ -262,7 +267,7 @@
 
         <div class="poi-container" style="top: 20%; left: 24%;">     
             <a href="#" class="poi" id="poi14"><img src="/museums/poi.png"></a>
-            <div class="poi-title">MoE</div>
+            <div class="poi-title">THE MUSEUM OF EVERYTHING</div>
             <div class="popup" id="popup14">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">The Museum of Everything, London, England</div>
@@ -272,7 +277,7 @@
 
         <div class="poi-container" style="top: 20%; left: 24%;">     
             <a href="#" class="poi" id="poi15"><img src="/museums/poi.png"></a>
-            <div class="poi-title">Whitworth</div>
+            <div class="poi-title">WHITWORTH</div>
             <div class="popup" id="popup15">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">Whitworth Art Gallery, Manchester, UK</div>
@@ -300,7 +305,7 @@
             });
             $('.poi').click(function(e){
                 e.preventDefault();
-                let id = $(this).attr('id').charAt(3);
+                let id = $(this).attr('id').substring(3);
                 $('.popup').hide();
                 $('#popup'+id).show();
             });
