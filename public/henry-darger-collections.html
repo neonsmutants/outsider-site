@@ -40,10 +40,13 @@
         }
 
         .poi{
-            width: 44px;
-            height: 40px;
+            width: 24px;
             display: block;
             float: left;
+            /* box-shadow: 2px 10px 20px 0px rgba(0,0,0,0.3);
+            -webkit-box-shadow: 2px 10px 20px 0px rgba(0,0,0,0.3);
+            -moz-box-shadow: 2px 10px 20px 0px rgba(0,0,0,0.3);
+            border-radius: 99px; */
         }
 
         .poi img{
@@ -53,7 +56,20 @@
         .poi-title{
             margin: 0;
             font-family: 'DargerScript', script;
-            float: right;          
+            float: right;
+            position: relative;
+            font-size: 18px;
+            padding: 5px;
+            background-color: rgba(255, 217, 0, 0.3);
+            box-shadow: 2px 10px 20px 0px rgba(0,0,0,0.3);
+            -webkit-box-shadow: 2px 10px 20px 0px rgba(0,0,0,0.3);
+            -moz-box-shadow: 2px 10px 20px 0px rgba(0,0,0,0.3);
+        }
+        .poi-title.border-top{
+            border-top: 2px solid #f00000;
+        }
+        .poi-title.border-bottom{
+            border-bottom: 2px solid #f00000;
         }
 
         .poi-title strong{
@@ -122,9 +138,9 @@
     <div id="map-container">
         <img src="/museums/map.jpg" alt="map" id="map">
 
-        <div class="poi-container" style="top: 48%; left: 44%;">     
-            <a href="#" class="poi" id="poi0"><img src="/museums/poi.png"></a>
-            <!-- <div class="poi-title">MOMA</div> -->
+        <div class="poi-container" style="top: 48.6%; left: 44.2%;">     
+            <a href="https://www.moma.org/artists/28600#works" class="poi" id="poi0"><img src="/museums/poi.png"></a>
+            <div class="poi-title border-top" style="top: 18px; left: -95%;">MOMA</div>
             <div class="popup" id="popup0">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">Museum of Modern Art, New York</div>
@@ -132,9 +148,9 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 46%; left: 43.5%;">     
-            <a href="#" class="poi" id="poi1"><img src="/museums/poi.png"></a>
-            <!-- <div class="poi-title">FOLK ART</div> -->
+        <div class="poi-container" style="top: 46.6%; left: 43.7%;">     
+            <a href="http://collection.folkartmuseum.org/people/492/henry-darger/objects" class="poi" id="poi1"><img src="/museums/poi.png"></a>
+            <div class="poi-title border-bottom" style="top: -18px; left: -95%;">FOLK ART</div>
             <div class="popup" id="popup1">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">American Folk Art Museum, New York</div>
@@ -142,9 +158,9 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 45.5%; left: 44.2%;">     
-            <a href="#" class="poi" id="poi2"><img src="/museums/poi.png"></a>
-            <!-- <div class="poi-title">WHITNEY</div> -->
+        <div class="poi-container" style="top: 45.6%; left: 44.2%;">     
+            <a href="https://whitney.org/artists/11701" class="poi" id="poi2"><img src="/museums/poi.png"></a>
+            <div class="poi-title border-bottom" style="top: -18px; left: -8px;">WHITNEY</div>
             <div class="popup" id="popup2">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">Whitney Museum of American Art, New York</div>
@@ -152,9 +168,9 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 52%; left: 44%;">     
-            <a href="#" class="poi" id="poi3"><img src="/museums/poi.png"></a>
-            <div class="poi-title">SMITHSONIAN</div>
+        <div class="poi-container" style="top: 52.6%; left: 44.2%;">     
+            <a href="https://americanart.si.edu/artist/henry-darger-1122" class="poi" id="poi3"><img src="/museums/poi.png"></a>
+            <div class="poi-title border-top" style="top: 18px; left: -8px;">SMITHSONIAN</div>
             <div class="popup" id="popup3">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">Smithsonian American Art Museum, Washington, D.C.</div>
@@ -162,9 +178,9 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 38%; left: 34%;">     
-            <a href="#" class="poi" id="poi4"><img src="/museums/poi.png"></a>
-            <!-- <div class="poi-title">ART INSTITUTE</div> -->
+        <div class="poi-container" style="top: 38.6%; left: 34.2%;">     
+            <a href="https://www.artic.edu/artists/5947/henry-darger" class="poi" id="poi4"><img src="/museums/poi.png"></a>
+            <div class="poi-title border-bottom" style="top: -18px; left: -95%;">ART INSTITUTE</div>
             <div class="popup" id="popup4">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">Art Institute Of Chicago, Chicago, Illinois</div>
@@ -172,9 +188,10 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 38.5%; left: 34.6%;">     
-            <a href="#" class="poi" id="poi5"><img src="/museums/poi.png"></a>
-            <!-- <div class="poi-title">MCA</div> -->
+        <div class="poi-container" style="top: 39.1%; left: 34.8%;">     
+            <a href="https://mcachicago.org/Collection/Items/Unknown/Henry-Darger-Untitled-Blengin-
+            Creature-Despite-Being-Defended-Date-Unknown" class="poi" id="poi5"><img src="/museums/poi.png"></a>
+            <div class="poi-title border-bottom" style="top: -18px; left: -8px;">MCA</div>
             <div class="popup" id="popup5">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">Museum of Contemporary Art, Chicago, Illinois</div>
@@ -183,9 +200,9 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 40%; left: 33.7%;">     
-            <a href="#" class="poi" id="poi6"><img src="/museums/poi.png"></a>
-            <!-- <div class="poi-title">INTUIT</div> -->
+        <div class="poi-container" style="top: 40.6%; left: 33.9%;">     
+            <a href="https://www.art.org/henry-darger-room-collection/" class="poi" id="poi6"><img src="/museums/poi.png"></a>
+            <div class="poi-title border-top" style="top: 18px; left: -95%;">INTUIT</div>
             <div class="popup" id="popup6">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">The Center for Intuitive and Outsider Art, Chicago, Illinois</div>
@@ -193,9 +210,9 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 40.5%; left: 34.3%;">     
-            <a href="#" class="poi" id="poi7"><img src="/museums/poi.png"></a>
-            <!-- <div class="poi-title">SMART</div> -->
+        <div class="poi-container" style="top: 41.1%; left: 34.5%;">     
+            <a href="https://smartcollection.uchicago.edu/people/348/henry-darger/objects" class="poi" id="poi7"><img src="/museums/poi.png"></a>
+            <div class="poi-title border-top" style="top: 18px; left: -8px;">SMART</div>
             <div class="popup" id="popup7">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">Smart Museum of Art, Chicago, Illinois</div>
@@ -203,9 +220,9 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 31%; left: 34.6%;">     
-            <a href="#" class="poi" id="poi8"><img src="/museums/poi.png"></a>
-            <div class="poi-title">MAM</div>
+        <div class="poi-container" style="top: 31.6%; left: 34.8%;">     
+            <a href="http://collection.mam.org/search.php?search=Darger%2C%20Henry" class="poi" id="poi8"><img src="/museums/poi.png"></a>
+            <div class="poi-title border-top" style="top: 18px; left: -8px;">MAM</div>
             <div class="popup" id="popup8">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">Milwaukee Art Museum, Milwaukee, Wisconsin</div>
@@ -213,9 +230,9 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 24%; left: 31%;">     
-            <a href="#" class="poi" id="poi9"><img src="/museums/poi.png"></a>
-            <div class="poi-title">WAC</div>
+        <div class="poi-container" style="top: 24.6%; left: 31.2%;">     
+            <a href="https://walkerart.org/collections/artists/henry-darger" class="poi" id="poi9"><img src="/museums/poi.png"></a>
+            <div class="poi-title border-top" style="top: 18px; left: -8px;">WAC</div>
             <div class="popup" id="popup9">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">Walker Art Center, Minneapolis, Minnesota</div>
@@ -223,9 +240,11 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 60%; left: 40%;">     
-            <a href="#" class="poi" id="poi10"><img src="/museums/poi.png"></a>
-            <div class="poi-title">HIGH MUSEUM OF ART</div>
+        <div class="poi-container" style="top: 60.6%; left: 40.2%;">     
+            <a href="https://high.org/collections/40-at-jenny-richee-facing-attack-by-blengiglomeneans-whomistake-
+            them-for-little-glandelinians-because-they-wore-gray-unforms-the-only-way-tosave-
+            save-themselves-is-to-undress-hide-the-glandelinia/" class="poi" id="poi10"><img src="/museums/poi.png"></a>
+            <div class="poi-title border-top" style="top: 18px; left: -8px;">HIGH MUSEUM OF ART</div>
             <div class="popup" id="popup10">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">High Museum of Art, Atlanta, Georgia</div>
@@ -235,9 +254,9 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 20%; left: 24%;">     
-            <a href="#" class="poi" id="poi11"><img src="/museums/poi.png"></a>
-            <div class="poi-title">MAM</div>
+        <div class="poi-container" style="top: 42.3%; left: 57.5%;">     
+            <a href="https://www.mam.paris.fr/fr/oeuvre/henry-darger" class="poi" id="poi11"><img src="/museums/poi.png"></a>
+            <div class="poi-title border-bottom" style="top: -10px; left: -8px;">MAM</div>
             <div class="popup" id="popup11">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">Musée d'Art moderne de la Ville de Paris, Paris, France</div>
@@ -245,9 +264,9 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 20%; left: 24%;">     
-            <a href="#" class="poi" id="poi12"><img src="/museums/poi.png"></a>
-            <div class="poi-title">LAM</div>
+        <div class="poi-container" style="top: 35.6%; left: 58%;">     
+            <a href="https://www.musee-lam.fr/fr/rechercher?query=Darger" class="poi" id="poi12"><img src="/museums/poi.png"></a>
+            <div class="poi-title border-bottom" style="top: -18px; left: -8px;">LAM</div>
             <div class="popup" id="popup12">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">Lille métropole musée d'art moderne d'art contemporain et d'art brut, Villeneuve-d’Ascq</div>
@@ -255,9 +274,9 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 20%; left: 24%;">     
-            <a href="#" class="poi" id="poi13"><img src="/museums/poi.png"></a>
-            <div class="poi-title">COLLECTION DE L'ART BRUT</div>
+        <div class="poi-container" style="top: 45.1%; left: 60%;">     
+            <a href="https://www.artbrut.ch/fr_CH/auteurs/la-collection-de-l-art-brut/darger-henry" class="poi" id="poi13"><img src="/museums/poi.png"></a>
+            <div class="poi-title border-top" style="top: 30px; left: -8px; width: 120px;">COLLECTION DE L'ART BRUT</div>
             <div class="popup" id="popup13">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">Collection de l'Art Brut, Lausanne, Switzerland</div>
@@ -265,9 +284,9 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 20%; left: 24%;">     
-            <a href="#" class="poi" id="poi14"><img src="/museums/poi.png"></a>
-            <div class="poi-title">THE MUSEUM OF EVERYTHING</div>
+        <div class="poi-container" style="top: 30.1%; left: 55.9%;">     
+            <a href="https://www.gallevery.com/artists/henry-darger" class="poi" id="poi14"><img src="/museums/poi.png"></a>
+            <div class="poi-title border-bottom" style="top: -18px; left: -8px;">THE MUSEUM OF EVERYTHING</div>
             <div class="popup" id="popup14">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">The Museum of Everything, London, England</div>
@@ -275,9 +294,9 @@
             </div>
         </div>
 
-        <div class="poi-container" style="top: 20%; left: 24%;">     
-            <a href="#" class="poi" id="poi15"><img src="/museums/poi.png"></a>
-            <div class="poi-title">WHITWORTH</div>
+        <div class="poi-container" style="top: 22.6%; left: 53.9%;">     
+            <a href="http://gallerysearch.ds.man.ac.uk/Detail/56046" class="poi" id="poi15"><img src="/museums/poi.png"></a>
+            <div class="poi-title border-bottom" style="top: -18px; left: -8px;">WHITWORTH</div>
             <div class="popup" id="popup15">
                 <a href="#" class="close"><img src="/museums/close.svg"></a>
                 <div class="title">Whitworth Art Gallery, Manchester, UK</div>
@@ -297,23 +316,26 @@
     <script>
 
         $(document).ready(function(){
+
+            window.scrollTo(1500, 130);
+            
             $('.poi').mouseover(function(){
                 $(this).children('img').attr('src', '/museums/poi-hover.png');
             });
             $('.poi').mouseout(function(){
                 $(this).children('img').attr('src', '/museums/poi.png');
             });
-            $('.poi').click(function(e){
-                e.preventDefault();
-                let id = $(this).attr('id').substring(3);
-                $('.popup').hide();
-                $('#popup'+id).show();
-            });
+            // $('.poi').click(function(e){
+            //     e.preventDefault();
+            //     let id = $(this).attr('id').substring(3);
+            //     $('.popup').hide();
+            //     $('#popup'+id).show();
+            // });
 
-            $('.close').click(function(e){
-                e.preventDefault();
-                $(this).parent().hide();
-            });
+            // $('.close').click(function(e){
+            //     e.preventDefault();
+            //     $(this).parent().hide();
+            // });
 
             $('body').mousedown(function(){
                 $(this).css('cursor', 'grabbing');
