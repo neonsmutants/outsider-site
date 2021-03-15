@@ -5,7 +5,7 @@
     <div id="overlay" v-bind:class="{ visible: showOverlay }">
       <div class="content">
         <a class="bt-close" v-on:click="showOverlay = false"><img src="@/assets/img/ui/close-cream.svg" alt="Close"></a>
-        <a href="/newsletter.html" target="blank" class="bt-primary">Subscribe to our newsletter !</a>
+        <a href="/newsletter.html" target="blank" class="bt-primary">{{text.fr.newsletter}}</a>
       </div>
       <img src="@/assets/img/ui/overlay.svg" alt="Overlay" class="bg">
     </div>
@@ -17,7 +17,7 @@
     <div class="space" v-if="!isMobile"></div>
     <div class="space" v-if="!isMobile"></div>
 
-    <!-- embed youtube -->    
+    <!-- embed youtube -->
     <div class="video-container">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/G8h12wI1tDc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
@@ -26,8 +26,8 @@
     
     <div class="cloud left" id="c0">
       <div class="content">
-        <p class="big">A <strong>musical album</strong> and <strong>transmedia project</strong></p>
-        <p class="subtitle">by Philippe Cohen Solal & Mike Lindsay</p>
+        <p class="big"><span v-html="text.en.c0.big"></span></p>
+        <p class="subtitle">{{text.en.c0.subtitle}}</p>
       </div>    
       <img src="@/assets/img/ui/clouds/c0.svg" class="cb" v-if="!isMobile">
     </div>
@@ -416,7 +416,7 @@
 </template>
 
 <script>
-import emailjs from 'emailjs-com'
+//import emailjs from 'emailjs-com'
 
 export default {
   name: 'Home',
@@ -427,13 +427,21 @@ export default {
       isMobile: false,
       date: null,
       emailResponse: '',
-      showOverlay: false
+      showOverlay: false,
+      text: {},
+      lang: 'en'
     }
   },
   mounted() {
+    fetch('/data/lang.json')
+      .then(r => r.json())
+      .then(json => {
+        this.text = json.text
+      })
+
     let twitterScript = document.createElement('script')
     twitterScript.setAttribute('src', 'https://platform.twitter.com/widgets.js')
-    document.head.appendChild(twitterScript)
+    document.head.appendChild(twitterScript) 
   },
   created() {
     let that = this
@@ -457,17 +465,17 @@ export default {
     this.date = new Date().getFullYear()
   },
   methods: {
-    sendEmail(e) {
-      let that = this
-      emailjs.sendForm('service_gw9j3rs', 'template_ngoxb8p', e.target, 'user_QNhhPaiTt2jfg3bENI2Xi')
-        .then((result) => {
-            console.log('SUCCESS!', result.status, result.text)
-            that.emailResponse = 'Your message has been sent !'
-        }, (error) => {
-            console.log('FAILED...', error)
-            that.emailResponse = "Oops ! An error occured :/"
-        })
-    }
+    // sendEmail(e) {
+    //   let that = this
+    //   emailjs.sendForm('service_gw9j3rs', 'template_ngoxb8p', e.target, 'user_QNhhPaiTt2jfg3bENI2Xi')
+    //     .then((result) => {
+    //         console.log('SUCCESS!', result.status, result.text)
+    //         that.emailResponse = 'Your message has been sent !'
+    //     }, (error) => {
+    //         console.log('FAILED...', error)
+    //         that.emailResponse = "Oops ! An error occured :/"
+    //     })
+    // }
   }
 }
 </script>

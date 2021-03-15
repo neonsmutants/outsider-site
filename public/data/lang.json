@@ -1,0 +1,18 @@
+{
+    "text": {
+        "en": {
+            "newsletter": "Subscribe to our newsletter !",
+            "c0": {
+                "big": "A <strong>musical album</strong> and <strong>transmedia project</strong>",
+                "subtitle": "by Philippe Cohen Solal & Mike Lindsay"
+            }
+        },
+        "fr": {
+            "newsletter": "Inscrivez-vous à la newsletter !",
+            "c0": {
+                "big": "A <strong>musical album</strong> and <strong>transmedia project</strong>",
+                "subtitle": "by Philippe Cohen Solal & Mike Lindsay"
+            }
+        }
+    }
+}
